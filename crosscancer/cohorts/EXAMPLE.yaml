@@ -1,0 +1,39 @@
+# Example cohort config for run_cohort_pipeline.py
+# Usage: python run_cohort_pipeline.py --cohort EXAMPLE --config crosscancer/cohorts/EXAMPLE.yaml
+# For a real cohort, copy this file to cohorts/<COHORT>.yaml (<COHORT> = directory name) and fill in the values.
+
+# Cohort name = crosscancer/<COHORT>/full directory name. Must match --cohort.
+cohort: EXAMPLE
+description: "Example cohort: targeted axis (expected H&E-blind) vs morphological positive control (expected triageable)"
+
+# --- embedding (default UNI) ---------------------------------------------------
+embedding_model: uni                 # uni (default) | virchow2 | uni2h
+tile_config: pipeline/embedding/configs/tile_config.yaml   # tiling settings (256px, 0.5 mpp)
+# device: cuda                        # GPU stages (embed/mil/fiveseed); default: cuda if available, else cpu
+
+# --- slide input (for embedding) ------------------------------------------------
+# Manifest CSV read by run_batch_embedding.py. Required column: slide_path (optional: slide_id, case_id, file_id).
+# If omitted, the embedding stage is skipped and existing embeddings under
+# $DATA_ROOT/crosscancer/<COHORT>/uni_v1/ are used.
+# (run_embed_crosscancer.py downloads TCGA diagnostic slides from GDC; its cohorts are hard-coded.)
+slide_manifest: data/manifests/example_slides.csv
+# tile_dir: crosscancer/EXAMPLE/full/coords   # default: <COHORT>/full/coords
+
+# --- MIL runner ------------------------------------------------------------------
+# The cohort must have endpoints, route_axis and positive_control in one runner's CANCER_CFG.
+#   run_mil_cost.py  : cohorts with a frozen_map (therapeutic distance); computes cost-of-substitution routing (e.g. LUNG_NSCLC, COLORECTAL)
+#   sh_mil_cost.py   : cohorts without a frozen_map; per-endpoint misroute_rate (e.g. GASTRIC_STAD, HEADNECK_HNSC)
+# If omitted, the driver searches both runners.
+mil_runner: sh_mil_cost.py
+
+# --- endpoints (for reference; the runner CANCER_CFG / sh_robustness_5seed.ENDPOINTS define what is trained) -----
+# Each endpoint must be a 0/1 column in <COHORT>/full/patient_labels.csv.
+endpoints:
+  - {name: positive_control_morph, expect: "H&E-triageable (positive control: real >> shuffle)"}
+  - {name: target_mutation_A,      expect: "H&E-blind (weak morphological correlate)"}
+
+# --- inputs (checked, not created by the driver) ----------------------------------
+label_file: crosscancer/EXAMPLE/full/patient_labels.csv   # molecular labels (cBioPortal/GDC)
+# frozen_map: crosscancer/EXAMPLE/frozen_map.json          # needed only for run_mil_cost.py
+
+# split = site-disjoint (make_split.py)

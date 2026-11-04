@@ -1,0 +1,13 @@
+<svg style="font-family:Helvetica,Arial,sans-serif;background:#fff" viewBox="0 0 272 47" width="100%" xmlns="http://www.w3.org/2000/svg"><rect x="72" y="3.0" width="76.9" height="9" fill="#2A9D8F"/>
+<text x="69.5" y="9.1" font-size="8.38" text-anchor="end" font-weight="400" fill="#1B2333" >Image model</text>
+<text x="150.9" y="9.3" font-size="9.70" text-anchor="start" font-weight="800" fill="#1B2333" >0.681</text>
+<rect x="72" y="15.5" width="124.5" height="9" fill="#1F3A5F"/>
+<text x="69.5" y="21.6" font-size="8.38" text-anchor="end" font-weight="400" fill="#1B2333" >Histology only</text>
+<text x="198.5" y="21.8" font-size="9.70" text-anchor="start" font-weight="800" fill="#1B2333" >0.793</text>
+<line x1="72" y1="29.0" x2="242" y2="29.0" stroke="#1B2333" stroke-width="0.4"/>
+<text x="72.0" y="36.0" font-size="7.50" text-anchor="middle" font-weight="400" fill="#55606E" >0.5</text>
+<text x="114.5" y="36.0" font-size="7.50" text-anchor="middle" font-weight="400" fill="#55606E" >0.6</text>
+<text x="157.0" y="36.0" font-size="7.50" text-anchor="middle" font-weight="400" fill="#55606E" >0.7</text>
+<text x="199.5" y="36.0" font-size="7.50" text-anchor="middle" font-weight="400" fill="#55606E" >0.8</text>
+<text x="242.0" y="36.0" font-size="7.50" text-anchor="middle" font-weight="400" fill="#55606E" >0.9</text>
+<text x="157.0" y="44.5" font-size="7.94" text-anchor="middle" font-weight="600" fill="#1B2333" >AUROC — lung KRAS-G12C</text></svg>

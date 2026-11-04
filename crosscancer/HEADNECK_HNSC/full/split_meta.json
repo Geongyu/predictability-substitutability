@@ -1,0 +1,15 @@
+{
+  "cancer": "HEADNECK_HNSC",
+  "policy": "site-disjoint patient-level (split_policy_v0 logic)",
+  "split_hash": "c4e28454fc202405",
+  "seed": 42,
+  "n_patients": 523,
+  "n_sites": 28,
+  "dist": {
+    "train": 366,
+    "val": 79,
+    "test": 78
+  },
+  "site_disjoint": true,
+  "patient_overlap": 0
+}

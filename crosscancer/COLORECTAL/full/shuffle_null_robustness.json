@@ -1,0 +1,256 @@
+{
+  "track": "shuffle-null 5-seed robustness + bag-size (proba ~ tile count) confound check",
+  "purpose": "Null distribution from 5 retrained shuffle seeds (replaces the single seed=42 shuffle-null). Tests whether real AUROC exceeds null_mean+2SD, and checks bag-size confounding via Spearman of proba vs tile count.",
+  "claim_level": "hypothesis_only",
+  "critic_status": "pending",
+  "commit": "d3a614f88855eafd50bf764aaf1ec07e543c33b6",
+  "shuffle_seeds": [
+    42,
+    1,
+    2,
+    3,
+    4
+  ],
+  "method": "For each seed: permute train labels and reinitialise the model (seed drives torch/np/dev-split/shuffle), retrain CLAM-SB, report holdout (val+test, site-disjoint) AUROC. real_auroc taken from the main results file (for the margin); recomputed value shown alongside (seed 42 reproduction).",
+  "criterion": "real_auroc > null_mean + 2*null_sd (5 seeds, ddof=1, so SD has 4 degrees of freedom). Not met = fail (weak is not zero).",
+  "endpoints": {
+    "cms1_vs_rest": {
+      "real_auroc": 0.912,
+      "real_auroc_recomputed_seed42": 0.912,
+      "null_seeds": [
+        0.7136,
+        0.3871,
+        0.7941,
+        0.6334,
+        0.4793
+      ],
+      "null_mean": 0.6015,
+      "null_sd": 0.167,
+      "null_min": 0.3871,
+      "null_max": 0.7941,
+      "null_mean_plus_2sd": 0.9355,
+      "margin_real_minus_nullmean": 0.3105,
+      "real_gt_null_mean_plus_2sd": false,
+      "single_seed42_null_authoritative": 0.7136,
+      "n_holdout": 132,
+      "n_pos": 19,
+      "proba_tilecount_spearman": {
+        "slide_level": {
+          "rho": 0.0407,
+          "pval": 0.6431,
+          "n_slides": 132,
+          "n_slides_at_cap5000": 119
+        },
+        "patient_level": {
+          "rho": 0.0407,
+          "pval": 0.6431,
+          "n_patients": 132
+        }
+      }
+    },
+    "cms2_vs_rest": {
+      "real_auroc": 0.8707,
+      "real_auroc_recomputed_seed42": 0.8707,
+      "null_seeds": [
+        0.4098,
+        0.418,
+        0.45,
+        0.5405,
+        0.4885
+      ],
+      "null_mean": 0.4614,
+      "null_sd": 0.054,
+      "null_min": 0.4098,
+      "null_max": 0.5405,
+      "null_mean_plus_2sd": 0.5694,
+      "margin_real_minus_nullmean": 0.4093,
+      "real_gt_null_mean_plus_2sd": true,
+      "single_seed42_null_authoritative": 0.4098,
+      "n_holdout": 132,
+      "n_pos": 50,
+      "proba_tilecount_spearman": {
+        "slide_level": {
+          "rho": 0.032,
+          "pval": 0.7154,
+          "n_slides": 132,
+          "n_slides_at_cap5000": 119
+        },
+        "patient_level": {
+          "rho": 0.032,
+          "pval": 0.7154,
+          "n_patients": 132
+        }
+      }
+    },
+    "cms3_vs_rest": {
+      "real_auroc": 0.8396,
+      "real_auroc_recomputed_seed42": 0.8396,
+      "null_seeds": [
+        0.5341,
+        0.5032,
+        0.4599,
+        0.5641,
+        0.5706
+      ],
+      "null_mean": 0.5264,
+      "null_sd": 0.0458,
+      "null_min": 0.4599,
+      "null_max": 0.5706,
+      "null_mean_plus_2sd": 0.618,
+      "margin_real_minus_nullmean": 0.3132,
+      "real_gt_null_mean_plus_2sd": true,
+      "single_seed42_null_authoritative": 0.5341,
+      "n_holdout": 132,
+      "n_pos": 21,
+      "proba_tilecount_spearman": {
+        "slide_level": {
+          "rho": -0.1063,
+          "pval": 0.225,
+          "n_slides": 132,
+          "n_slides_at_cap5000": 119
+        },
+        "patient_level": {
+          "rho": -0.1063,
+          "pval": 0.225,
+          "n_patients": 132
+        }
+      }
+    },
+    "cms4_vs_rest": {
+      "real_auroc": 0.6606,
+      "real_auroc_recomputed_seed42": 0.6606,
+      "null_seeds": [
+        0.6392,
+        0.527,
+        0.3897,
+        0.4143,
+        0.6574
+      ],
+      "null_mean": 0.5255,
+      "null_sd": 0.1236,
+      "null_min": 0.3897,
+      "null_max": 0.6574,
+      "null_mean_plus_2sd": 0.7727,
+      "margin_real_minus_nullmean": 0.1351,
+      "real_gt_null_mean_plus_2sd": false,
+      "single_seed42_null_authoritative": 0.6392,
+      "n_holdout": 132,
+      "n_pos": 42,
+      "proba_tilecount_spearman": {
+        "slide_level": {
+          "rho": -0.0354,
+          "pval": 0.6867,
+          "n_slides": 132,
+          "n_slides_at_cap5000": 119
+        },
+        "patient_level": {
+          "rho": -0.0354,
+          "pval": 0.6867,
+          "n_patients": 132
+        }
+      }
+    },
+    "msi_high": {
+      "real_auroc": 0.9184,
+      "real_auroc_recomputed_seed42": 0.9184,
+      "null_seeds": [
+        0.6364,
+        0.4796,
+        0.4105,
+        0.6418,
+        0.4571
+      ],
+      "null_mean": 0.5251,
+      "null_sd": 0.107,
+      "null_min": 0.4105,
+      "null_max": 0.6418,
+      "null_mean_plus_2sd": 0.7391,
+      "margin_real_minus_nullmean": 0.3933,
+      "real_gt_null_mean_plus_2sd": true,
+      "single_seed42_null_authoritative": 0.6364,
+      "n_holdout": 161,
+      "n_pos": 21,
+      "proba_tilecount_spearman": {
+        "slide_level": {
+          "rho": -0.1687,
+          "pval": 0.0303,
+          "n_slides": 165,
+          "n_slides_at_cap5000": 145
+        },
+        "patient_level": {
+          "rho": -0.0959,
+          "pval": 0.2263,
+          "n_patients": 161
+        }
+      }
+    },
+    "anti_egfr_eligible": {
+      "real_auroc": 0.7053,
+      "real_auroc_recomputed_seed42": 0.7053,
+      "null_seeds": [
+        0.5385,
+        0.4694,
+        0.586,
+        0.4767,
+        0.6158
+      ],
+      "null_mean": 0.5373,
+      "null_sd": 0.0648,
+      "null_min": 0.4694,
+      "null_max": 0.6158,
+      "null_mean_plus_2sd": 0.6669,
+      "margin_real_minus_nullmean": 0.168,
+      "real_gt_null_mean_plus_2sd": true,
+      "single_seed42_null_authoritative": 0.5385,
+      "n_holdout": 161,
+      "n_pos": 84,
+      "proba_tilecount_spearman": {
+        "slide_level": {
+          "rho": -0.3341,
+          "pval": 0.0,
+          "n_slides": 165,
+          "n_slides_at_cap5000": 145
+        },
+        "patient_level": {
+          "rho": -0.2623,
+          "pval": 0.0008,
+          "n_patients": 161
+        }
+      }
+    },
+    "braf_v600": {
+      "real_auroc": 0.8817,
+      "real_auroc_recomputed_seed42": 0.8817,
+      "null_seeds": [
+        0.6406,
+        0.4813,
+        0.6105,
+        0.4785,
+        0.4603
+      ],
+      "null_mean": 0.5342,
+      "null_sd": 0.0844,
+      "null_min": 0.4603,
+      "null_max": 0.6406,
+      "null_mean_plus_2sd": 0.703,
+      "margin_real_minus_nullmean": 0.3475,
+      "real_gt_null_mean_plus_2sd": true,
+      "single_seed42_null_authoritative": 0.6406,
+      "n_holdout": 161,
+      "n_pos": 15,
+      "proba_tilecount_spearman": {
+        "slide_level": {
+          "rho": -0.1642,
+          "pval": 0.035,
+          "n_slides": 165,
+          "n_slides_at_cap5000": 145
+        },
+        "patient_level": {
+          "rho": -0.0814,
+          "pval": 0.3049,
+          "n_patients": 161
+        }
+      }
+    }
+  }
+}

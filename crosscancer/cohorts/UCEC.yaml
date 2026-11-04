@@ -1,0 +1,32 @@
+# UCEC (endometrial carcinoma) cohort config for run_cohort_pipeline.py
+# Exploratory extension: outside the preregistered cancers (breast, lung, colorectal, gastric, head and neck);
+# not part of the substitutability law aggregate. HER2-amp (serous) adds a third organ for the HER2 axis.
+
+cohort: UCEC
+description: "Endometrial: visible axes (serous histology positive control, MSI-H -> IO) vs blind (HER2-amp serous)"
+
+# --- embedding (default UNI) ---
+embedding_model: uni
+tile_config: pipeline/embedding/configs/tile_config.yaml
+# device: cuda   # default: cuda if available, else cpu
+
+# --- slide input (TCGA-UCEC diagnostic slides) ---
+# Build the TCGA-UCEC manifest with pipeline/data/build_manifest.py.
+slide_manifest: pipeline/data/manifests/tcga_ucec_manifest.csv
+
+# --- MIL runner = sh_mil_cost.py (no frozen_map; per-endpoint misroute_rate) ---
+mil_runner: sh_mil_cost.py
+
+# --- endpoints (registered in sh_mil_cost.CANCER_CFG and sh_robustness_5seed.ENDPOINTS) ---
+# Each is a 0/1 column in <COHORT>/full/patient_labels.csv (cBioPortal ucec_tcga_pan_can_atlas_2018).
+endpoints:
+  - {name: histology_serous, axis: visible,     expect: "H&E positive control: serous vs endometrioid, strong morphology (real >> shuffle)"}
+  - {name: msi_h,            axis: visible,     expect: "immune/TIL visible (e.g. MLH1 methylation); triageable, dMMR -> IO (dostarlimab)"}
+  - {name: her2_amp,         axis: blind,       expect: "HER2 amplification in serous EC; weak morphological correlate; -> antiHER2"}
+  - {name: pole,             axis: exploratory, expect: "POLE ultramutated; TILs present, prognostic, exploratory"}
+
+# --- inputs (checked, not created by the driver) ---
+label_file: crosscancer/UCEC/full/patient_labels.csv
+# Label source: cBioPortal ucec_tcga_pan_can_atlas_2018 (histology, MSI status, ERBB2 amplification (GISTIC), POLE hotspot).
+
+# split = site-disjoint (make_split.py)

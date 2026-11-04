@@ -1,0 +1,63 @@
+{
+  "figure": "Fig 3: per-axis cost + headline contrast",
+  "relation_to_fig2": "Fig 2 = mechanism (confusion x distance); Fig 3 = magnitude and uncertainty",
+  "sources": [
+    "patient_routing_cost.json (PAM50 routing)",
+    "patient_routing_cost_receptor.json (receptor routing, primary)"
+  ],
+  "claim_level": "hypothesis_only",
+  "per_axis_cost": {
+    "receptor": {
+      "antiHER2": 0.4161,
+      "endocrine": 0.0347,
+      "chemo": 0.5103
+    },
+    "pam50": {
+      "antiHER2": 0.718,
+      "endocrine": 0.378,
+      "chemo": 0.105
+    }
+  },
+  "misroute_pct": {
+    "receptor": {
+      "antiHER2": 100.0,
+      "endocrine": 5.0,
+      "chemo": 73.4
+    },
+    "pam50": {
+      "antiHER2": 100.0,
+      "endocrine": 51.4,
+      "chemo": 13.8
+    }
+  },
+  "headline_contrast": {
+    "receptor": {
+      "value": 0.3814,
+      "ci95": [
+        0.3309,
+        0.4266
+      ],
+      "ci95_method": "patient-cluster bootstrap",
+      "excludes_zero": true,
+      "ci95_slide_level_deprecated": [
+        0.3476,
+        0.4201
+      ]
+    },
+    "pam50": {
+      "value": 0.3396,
+      "ci95": [
+        0.2508,
+        0.4254
+      ],
+      "ci95_method": "patient-cluster bootstrap",
+      "excludes_zero": true,
+      "ci95_slide_level_deprecated": [
+        0.2765,
+        0.4004
+      ]
+    }
+  },
+  "honest_reading": "Robust result: the HER2 axis (100% mis-route under both routings; molecular test required). Endocrine/chemo per-axis cost depends on routing scheme and external calibration (PAM50 51% vs receptor 5% / PAM50 14% vs receptor 73%) and does not support a safety claim. Only the headline contrast (antiHER2-endocrine) is robust under both routings (0.340/0.381, CI excludes 0).",
+  "note": "Per-axis cost depends on the routing scheme (endocrine/chemo flip). Stable across schemes: antiHER2 misroute 1.00 and headline contrast CI excluding 0."
+}

@@ -1,0 +1,68 @@
+{
+ "track": "HEADNECK_HNSC",
+ "purpose": "5-seed shuffle-null robustness",
+ "fm": "uni2h",
+ "feature_dim": 1536,
+ "claim_level": "hypothesis_only",
+ "critic_status": "pending",
+ "criterion": "real_auroc > null_mean + 2*null_sd (5 seed, ddof=1)",
+ "shuffle_seeds": [
+  42,
+  1,
+  2,
+  3,
+  4
+ ],
+ "endpoints": {
+  "hpv_pos": {
+   "real_auroc": 0.9559,
+   "n_pos": 26,
+   "n_hold": 135,
+   "null_mean": 0.4715,
+   "null_sd": 0.1595,
+   "threshold": 0.7905,
+   "pass": true,
+   "null_seeds": [
+    0.7241,
+    0.3994,
+    0.415,
+    0.3049,
+    0.5141
+   ]
+  },
+  "egfr_amp": {
+   "real_auroc": 0.5046,
+   "n_pos": 17,
+   "n_hold": 152,
+   "null_mean": 0.3774,
+   "null_sd": 0.052,
+   "threshold": 0.4815,
+   "pass": true,
+   "null_seeds": [
+    0.3303,
+    0.3364,
+    0.359,
+    0.4519,
+    0.4096
+   ],
+   "pass_reliable": false,
+   "caveat": "Spurious pass: real_auroc 0.5046 is at chance level (~0.5) but passes real>null_mean+2sd because null_sd 0.052 is narrow (n_null=5, 4 degrees of freedom). Not a valid pass."
+  },
+  "grade_high": {
+   "real_auroc": 0.7469,
+   "n_pos": 41,
+   "n_hold": 147,
+   "null_mean": 0.5198,
+   "null_sd": 0.1326,
+   "threshold": 0.7851,
+   "pass": false,
+   "null_seeds": [
+    0.393,
+    0.7414,
+    0.5265,
+    0.4724,
+    0.4659
+   ]
+  }
+ }
+}

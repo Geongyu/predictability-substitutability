@@ -1,0 +1,38 @@
+{
+ "track": "LUNG_NSCLC",
+ "purpose": "pixel-mean baseline",
+ "claim_level": "hypothesis_only",
+ "critic_status": "pending",
+ "endpoints": {
+  "histology_lusc": {
+   "auc": 0.9193,
+   "ci95": [
+    0.8891,
+    0.9496
+   ],
+   "n_pos": 153,
+   "n_hold": 271,
+   "method": "pixel-mean(slide mean-pool→patient mean)→StandardScaler→LogReg(balanced)"
+  },
+  "egfr_activating": {
+   "auc": 0.8294,
+   "ci95": [
+    0.7218,
+    0.9154
+   ],
+   "n_pos": 15,
+   "n_hold": 271,
+   "method": "pixel-mean(slide mean-pool→patient mean)→StandardScaler→LogReg(balanced)"
+  },
+  "kras_g12c": {
+   "auc": 0.6365,
+   "ci95": [
+    0.5347,
+    0.7451
+   ],
+   "n_pos": 14,
+   "n_hold": 271,
+   "method": "pixel-mean(slide mean-pool→patient mean)→StandardScaler→LogReg(balanced)"
+  }
+ }
+}

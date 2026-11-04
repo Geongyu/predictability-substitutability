@@ -1,0 +1,35 @@
+<svg style="font-family:Helvetica,Arial,sans-serif;background:#fff" viewBox="0 0 272 175" width="100%" xmlns="http://www.w3.org/2000/svg"><defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#55606E"/></marker></defs>
+<rect x="0" y="6.2" width="116" height="25" rx="2" fill="#F3F6FA" stroke="#1F3A5F" stroke-width="0.5"/>
+<text x="58.0" y="16.8" font-size="7.90" text-anchor="middle" font-weight="600" fill="#1B2333" >Site audit: label</text><text x="58.0" y="25.8" font-size="7.90" text-anchor="middle" font-weight="600" fill="#1B2333" >inseparable from site?</text>
+<line x1="116" y1="18.8" x2="131" y2="18.8" stroke="#55606E" stroke-width="0.6" marker-end="url(#ah)"/>
+<text x="124.0" y="16.8" font-size="6.72" text-anchor="middle" font-weight="700" fill="#55606E" >yes</text>
+<rect x="132" y="2" width="140" height="33.5" rx="2" fill="#fff" stroke="#D55E00" stroke-width="0.7"/>
+<path d="M132,4 a2,2 0 0 1 2,-2 h136 a2,2 0 0 1 2,2 v9 h-140 z" fill="#D55E00"/>
+<text x="135.0" y="10.3" font-size="7.90" text-anchor="start" font-weight="800" fill="#fff" >Audit-excluded</text>
+<text x="135.0" y="20.5" font-size="7.11" text-anchor="start" font-weight="400" fill="#1B2333" >Lung LUSC histology (control)</text><text x="135.0" y="29.5" font-size="7.11" text-anchor="start" font-weight="400" fill="#1B2333" >AUROC 0.939 · V = 1.000</text>
+<text x="60.0" y="36.2" font-size="6.72" text-anchor="start" font-weight="700" fill="#55606E" >no</text>
+<rect x="0" y="50.2" width="116" height="25" rx="2" fill="#F3F6FA" stroke="#1F3A5F" stroke-width="0.5"/>
+<text x="58.0" y="60.8" font-size="7.90" text-anchor="middle" font-weight="600" fill="#1B2333" >≥ 25 hold-out</text><text x="58.0" y="69.8" font-size="7.90" text-anchor="middle" font-weight="600" fill="#1B2333" >positives?</text>
+<line x1="116" y1="62.8" x2="131" y2="62.8" stroke="#55606E" stroke-width="0.6" marker-end="url(#ah)"/>
+<text x="124.0" y="60.8" font-size="6.72" text-anchor="middle" font-weight="700" fill="#55606E" >no</text>
+<rect x="132" y="41.5" width="140" height="42.5" rx="2" fill="#fff" stroke="#E6A817" stroke-width="0.7"/>
+<path d="M132,43.5 a2,2 0 0 1 2,-2 h136 a2,2 0 0 1 2,2 v9 h-140 z" fill="#E6A817"/>
+<text x="135.0" y="49.8" font-size="7.90" text-anchor="start" font-weight="800" fill="#fff" >Undecided (6)</text>
+<text x="135.0" y="60.0" font-size="7.11" text-anchor="start" font-weight="400" fill="#1B2333" >Gastric MSI-H 24 · H&amp;N EGFR amp 17</text><text x="135.0" y="69.0" font-size="7.11" text-anchor="start" font-weight="400" fill="#1B2333" >Lung EGFR 15 · KRAS-G12C 14</text><text x="135.0" y="78.0" font-size="7.11" text-anchor="start" font-weight="400" fill="#1B2333" >Gastric ERBB2 14 · Gastric EBV 7</text>
+<text x="60.0" y="80.2" font-size="6.72" text-anchor="start" font-weight="700" fill="#55606E" >yes</text>
+<rect x="0" y="94.2" width="116" height="25" rx="2" fill="#F3F6FA" stroke="#1F3A5F" stroke-width="0.5"/>
+<text x="58.0" y="104.8" font-size="7.90" text-anchor="middle" font-weight="600" fill="#1B2333" >Clears shuffled null?</text><text x="58.0" y="113.8" font-size="7.90" text-anchor="middle" font-weight="600" fill="#1B2333" >(&gt; mean + 2 SD)</text>
+<line x1="116" y1="106.8" x2="131" y2="106.8" stroke="#55606E" stroke-width="0.6" marker-end="url(#ah)"/>
+<text x="124.0" y="104.8" font-size="6.72" text-anchor="middle" font-weight="700" fill="#55606E" >no</text>
+<rect x="132" y="90.0" width="140" height="33.5" rx="2" fill="#fff" stroke="#7F8C9A" stroke-width="0.7"/>
+<path d="M132,92.0 a2,2 0 0 1 2,-2 h136 a2,2 0 0 1 2,2 v9 h-140 z" fill="#7F8C9A"/>
+<text x="135.0" y="98.3" font-size="7.90" text-anchor="start" font-weight="800" fill="#fff" >No signal</text>
+<text x="135.0" y="108.5" font-size="7.11" text-anchor="start" font-weight="400" fill="#1B2333" >none among sealed-forward</text><text x="135.0" y="117.5" font-size="7.11" text-anchor="start" font-weight="400" fill="#1B2333" >endpoints</text>
+<text x="60.0" y="124.2" font-size="6.72" text-anchor="start" font-weight="700" fill="#55606E" >yes</text>
+<rect x="0" y="129.5" width="272" height="24" rx="2" fill="#1B9E77"/>
+<text x="4.0" y="139.0" font-size="8.69" text-anchor="start" font-weight="800" fill="#fff" >Confirmed (1)</text>
+<text x="4.0" y="149.0" font-size="7.51" text-anchor="start" font-weight="600" fill="#fff" >Head and neck HPV · AUROC 0.959 · 26 positives</text>
+<line x1="58.0" y1="31.2" x2="58.0" y2="49.5" stroke="#55606E" stroke-width="0.6" marker-end="url(#ah)"/>
+<line x1="58.0" y1="75.2" x2="58.0" y2="93.5" stroke="#55606E" stroke-width="0.6" marker-end="url(#ah)"/>
+<line x1="58.0" y1="119.2" x2="58.0" y2="128.7" stroke="#55606E" stroke-width="0.6" marker-end="url(#ah)"/>
+<text x="0.0" y="161.5" font-size="6.72" text-anchor="start" font-weight="400" fill="#55606E" >Controls: H&amp;N grade passed; gastric Lauren failed; lung histology above.</text><text x="0.0" y="169.5" font-size="6.72" text-anchor="start" font-weight="400" fill="#55606E" >Histology-only baseline was recorded but is not a verdict criterion.</text></svg>

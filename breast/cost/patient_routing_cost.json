@@ -1,0 +1,65 @@
+{
+  "exp": "C1_cost_step2B_patient_routing_PAM50",
+  "routing_source": "PAM50 CLAM-MB predictions_ext.npz (proba/pred) + measured PAM50 labels",
+  "note": "PAM50 prediction -> therapy-axis routing. cost = therapeutic distance on mis-route (step 2A). The model never predicts HER2-enriched, so all true HER2 patients are routed off the antiHER2 axis. No-treatment penalty (predicted Normal-like) = global maximum therapeutic distance 0.765 (global maximum, not the maximum for the true axis).",
+  "n_routed": 382,
+  "normal_like_excluded": 13,
+  "per_axis": {
+    "endocrine": {
+      "n": 220,
+      "mean_cost": 0.378,
+      "misroute_rate": 0.514,
+      "dropped_rate": 0.3,
+      "mean_cost_ci95_patient": [
+        0.307,
+        0.4436
+      ]
+    },
+    "antiHER2": {
+      "n": 39,
+      "mean_cost": 0.718,
+      "misroute_rate": 1.0,
+      "dropped_rate": 0.077,
+      "mean_cost_ci95_patient": [
+        0.6583,
+        0.765
+      ]
+    },
+    "chemo": {
+      "n": 123,
+      "mean_cost": 0.105,
+      "misroute_rate": 0.138,
+      "dropped_rate": 0.13,
+      "mean_cost_ci95_patient": [
+        0.0478,
+        0.1647
+      ]
+    }
+  },
+  "headline_contrast_antiHER2_minus_endocrine": {
+    "value": 0.3396,
+    "ci95": [
+      0.2508,
+      0.4254
+    ],
+    "ci95_method": "patient-cluster bootstrap",
+    "excludes_zero": true,
+    "ci95_slide_level_deprecated": [
+      0.2765,
+      0.4004
+    ]
+  },
+  "caveat": [
+    "PAM50-to-axis mapping (HER2E ~ antiHER2) approximates receptor status",
+    "Predicted Normal-like = no treatment, max-distance penalty"
+  ],
+  "ci_method": {
+    "resample_unit": "patient (cluster bootstrap)",
+    "n_bootstrap": 5000,
+    "seed": 42,
+    "n_slides": 382,
+    "n_patients": 115,
+    "index_source": "predictions_ext_indexed.csv (case_id assigned by row-wise match of npz to manifest PAM50 rows)"
+  },
+  "indexed_predictions": "breast/models/pam50_clam_mb_uni_v1/predictions_ext_indexed.csv"
+}

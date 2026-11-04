@@ -1,0 +1,29 @@
+<svg style="font-family:Helvetica,Arial,sans-serif;background:#fff" viewBox="0 0 272 104" width="100%" xmlns="http://www.w3.org/2000/svg"><text x="0.0" y="7.0" font-size="8.82" text-anchor="start" font-weight="700" fill="#1B2333" >Per-axis cost of substitution (misassignment %)</text>
+<rect x="50" y="11" width="5" height="5" fill="#1F3A5F"/><text x="57.0" y="15.5" font-size="7.94" text-anchor="start" font-weight="400" fill="#1B2333" >Receptor (primary)</text>
+<rect x="150" y="11" width="5" height="5" fill="#2A9D8F"/><text x="157.0" y="15.5" font-size="7.94" text-anchor="start" font-weight="400" fill="#1B2333" >PAM50</text>
+<line x1="50.0" y1="22" x2="50.0" y2="88.0" stroke="#D9DEE5" stroke-width="0.3"/>
+<text x="50.0" y="93.0" font-size="7.50" text-anchor="middle" font-weight="400" fill="#55606E" >0.0</text>
+<line x1="95.0" y1="22" x2="95.0" y2="88.0" stroke="#D9DEE5" stroke-width="0.3"/>
+<text x="95.0" y="93.0" font-size="7.50" text-anchor="middle" font-weight="400" fill="#55606E" >0.2</text>
+<line x1="140.0" y1="22" x2="140.0" y2="88.0" stroke="#D9DEE5" stroke-width="0.3"/>
+<text x="140.0" y="93.0" font-size="7.50" text-anchor="middle" font-weight="400" fill="#55606E" >0.4</text>
+<line x1="185.0" y1="22" x2="185.0" y2="88.0" stroke="#D9DEE5" stroke-width="0.3"/>
+<text x="185.0" y="93.0" font-size="7.50" text-anchor="middle" font-weight="400" fill="#55606E" >0.6</text>
+<line x1="230.0" y1="22" x2="230.0" y2="88.0" stroke="#D9DEE5" stroke-width="0.3"/>
+<text x="230.0" y="93.0" font-size="7.50" text-anchor="middle" font-weight="400" fill="#55606E" >0.8</text>
+<text x="47.5" y="32.0" font-size="8.82" text-anchor="end" font-weight="700" fill="#1B2333" >Anti-HER2</text>
+<rect x="50" y="22.0" width="93.6" height="6.5" fill="#1F3A5F"/>
+<text x="145.1" y="27.2" font-size="7.50" text-anchor="start" font-weight="600" fill="#1B2333" >0.416 (100%)</text>
+<rect x="50" y="29.5" width="161.5" height="6.5" fill="#2A9D8F"/>
+<text x="213.0" y="34.8" font-size="7.50" text-anchor="start" font-weight="600" fill="#1B2333" >0.718 (100%)</text>
+<text x="47.5" y="54.0" font-size="8.82" text-anchor="end" font-weight="400" fill="#1B2333" >Endocrine</text>
+<rect x="50" y="44.0" width="7.9" height="6.5" fill="#1F3A5F"/>
+<text x="59.4" y="49.2" font-size="7.50" text-anchor="start" font-weight="600" fill="#1B2333" >0.035 (5%)</text>
+<rect x="50" y="51.5" width="85.1" height="6.5" fill="#2A9D8F"/>
+<text x="136.6" y="56.8" font-size="7.50" text-anchor="start" font-weight="600" fill="#1B2333" >0.378 (51%)</text>
+<text x="47.5" y="76.0" font-size="8.82" text-anchor="end" font-weight="400" fill="#1B2333" >Chemo</text>
+<rect x="50" y="66.0" width="114.8" height="6.5" fill="#1F3A5F"/>
+<text x="166.2" y="71.2" font-size="7.50" text-anchor="start" font-weight="600" fill="#1B2333" >0.510 (73%)</text>
+<rect x="50" y="73.5" width="23.6" height="6.5" fill="#2A9D8F"/>
+<text x="75.1" y="78.8" font-size="7.50" text-anchor="start" font-weight="600" fill="#1B2333" >0.105 (14%)</text>
+<text x="140.0" y="101.0" font-size="7.50" text-anchor="middle" font-weight="400" fill="#55606E" >cost of substitution (mean therapeutic distance); % = misassignment rate</text></svg>

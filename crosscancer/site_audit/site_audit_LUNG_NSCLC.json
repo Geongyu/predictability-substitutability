@@ -1,0 +1,35 @@
+{
+  "cohort": "LUNG_NSCLC",
+  "n_slides": 1026,
+  "label_site_imbalance": {
+    "histology_lusc": {
+      "n": 1026,
+      "n_pos": 493,
+      "cramers_v_label_vs_site": 1.0,
+      "top_site_pos_fraction": 0.101
+    },
+    "egfr_activating": {
+      "n": 1026,
+      "n_pos": 66,
+      "cramers_v_label_vs_site": 0.36,
+      "top_site_pos_fraction": 0.242
+    },
+    "kras_g12c": {
+      "n": 1026,
+      "n_pos": 65,
+      "cramers_v_label_vs_site": 0.355,
+      "top_site_pos_fraction": 0.231
+    }
+  },
+  "site_predictability": {
+    "cv": "StratifiedGroupKFold(5) on case_id",
+    "n_patients": 930,
+    "n_multislide_extra": 96,
+    "n_site_classes": 31,
+    "macro_auroc": 0.9783,
+    "permutation_null_mean": 0.4895,
+    "permutation_null_sd": 0.0258,
+    "above_null": true,
+    "interpretation": "High AUROC = H&E embeddings strongly predict TSS site, i.e. a learned site signature (Howard 2021). Group-aware (patient-level) CV, so no multi-slide leakage."
+  }
+}

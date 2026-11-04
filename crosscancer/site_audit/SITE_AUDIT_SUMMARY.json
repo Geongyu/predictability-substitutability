@@ -1,0 +1,46 @@
+{
+  "analysis": "site/batch audit — site predictability + label-site imbalance",
+  "note": "Mean-pooled UNI embeddings -> TSS site prediction (5-fold CV macro-AUROC) + permutation null; endpoint label x site Cramér's V. Reuses existing embeddings and labels.",
+  "cohorts": {
+    "COLORECTAL": {
+      "n_slides": 523,
+      "site_pred_macro_auroc": 0.9546,
+      "site_pred_null": 0.5,
+      "label_site_cramersV": {
+        "braf_v600e": 0.333
+      }
+    },
+    "GASTRIC_STAD": {
+      "n_slides": 439,
+      "site_pred_macro_auroc": 0.9887,
+      "site_pred_null": 0.4945,
+      "label_site_cramersV": {
+        "msi_h": 0.288,
+        "erbb2_amp": 0.169,
+        "ebv": 0.161,
+        "lauren_diffuse": 0.563
+      }
+    },
+    "HEADNECK_HNSC": {
+      "n_slides": 468,
+      "site_pred_macro_auroc": 0.9819,
+      "site_pred_null": 0.5006,
+      "label_site_cramersV": {
+        "hpv_pos": 0.397,
+        "egfr_amp": 0.196,
+        "grade_high": 0.298
+      }
+    },
+    "LUNG_NSCLC": {
+      "n_slides": 1026,
+      "site_pred_macro_auroc": 0.984,
+      "site_pred_null": 0.5043,
+      "label_site_cramersV": {
+        "histology_lusc": 1.0,
+        "egfr_activating": 0.36,
+        "kras_g12c": 0.355
+      }
+    }
+  },
+  "headline": "In 4/4 cohorts H&E embeddings predict TSS site with macro-AUROC 0.95-0.99 (null ~0.50): strong site signature (Howard 2021). Label-site confounding varies by endpoint (severe for LUNG histology V=1.0 and GASTRIC Lauren 0.563; moderate for HPV/BRAF/EGFR/MSI). Site independence of endpoint signal requires LOSO."
+}

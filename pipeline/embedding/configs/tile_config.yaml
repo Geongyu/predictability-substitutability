@@ -1,0 +1,9 @@
+tile_size: 256
+target_mpp: 0.5        # 20× ≈ 0.5 μm/px
+
+otsu:
+  tissue_threshold: 0.1  # minimum tissue fraction per tile (0.0–1.0)
+  downsample_factor: 64  # thumbnail downsample level for mask computation
+
+per_patient_cap: 5000    # max tiles per slide (random sample if exceeded)
+seed: 42

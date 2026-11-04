@@ -1,0 +1,65 @@
+{
+  "intersection_definition": "DepMap 24Q4 (OncotreeLineage=Breast, n=96) INNER JOIN GDSC2 fitted dose-response actually-screened BRCA lines (TCGA_DESC=BRCA, n=51) on SangerModelID; name-join fully concordant (51==51)",
+  "n_depmap_breast": 96,
+  "n_gdsc2_breast_screened": 51,
+  "n_total_intersection": 51,
+  "axes": {
+    "endocrine_ER_positive": {
+      "n": 15,
+      "threshold": 5,
+      "GO": true,
+      "label_basis": "literature ER status (Neve2006/Dai2017/DSMZ/ATCC/Cellosaurus)"
+    },
+    "antiHER2_ERBB2_amplified": {
+      "n": 14,
+      "threshold": 5,
+      "GO": true,
+      "cn_based": 11,
+      "literature_based": 3,
+      "label_basis": "DepMap 24Q4 ERBB2 relative copy-number >= 2.0 (objective) for lines with CN; literature for 3 CN-missing HER2+ lines"
+    },
+    "chemo_TNBC_basal": {
+      "n": 23,
+      "threshold": 5,
+      "GO": true,
+      "label_basis": "derived ER-/PR-/HER2- (literature receptor + DepMap CN)"
+    }
+  },
+  "ER_HER2_overlap_lines": [
+    "EFM192A",
+    "UACC812",
+    "BT474",
+    "MDAMB361",
+    "ZR7530"
+  ],
+  "unknown_unclassified": [
+    "COLO824",
+    "MRKNU1",
+    "OCUBM",
+    "YMB1E"
+  ],
+  "unassigned_to_any_axis": [
+    "COLO824",
+    "MRKNU1",
+    "OCUBM",
+    "YMB1E"
+  ],
+  "go_nogo": "GO",
+  "gdsc_antiHER2_drugs_present": [
+    "Lapatinib",
+    "Afatinib",
+    "Sapitinib"
+  ],
+  "antiHER2_drug_validation": "ERBB2-amp lines dominate the sensitive tail of GDSC2 Lapatinib/Afatinib/Sapitinib Z-scores (see _her2_drug_zscore.csv)",
+  "sources": {
+    "depmap": "DepMap 24Q4 Public: Model.csv (figshare file 51065297), OmicsCNGene.csv ERBB2 col (file 51065324); article 27993248",
+    "gdsc": "GDSC2 fitted_dose_response_27Oct23.xlsx + Cell_Lines_Details.xlsx (cog.sanger.ac.uk/cancerrxgene/GDSC_release8.x)",
+    "receptor_annotation": "Neve 2006 Cancer Cell 10:515; Dai 2017 J Cancer 8:3131; Marcotte 2016 Cell 164:293; DSMZ/ATCC; Cellosaurus"
+  },
+  "caveats": [
+    "ER/PR/TNBC labels are literature-curated (not re-measured); HER2 axis is DepMap-CN-backed where CN exists.",
+    "MDAMB453 (rel_CN 2.18, borderline) counted HER2+ per molecular-apocrine convention; medium confidence.",
+    "4 obscure lines (COLO824, MRKNU1, OCUBM, YMB1E) left unknown rather than guessed; excluded from all axis counts.",
+    "GDSC side = GDSC2 actually-screened BRCA lines; using Cell_Lines_Details (annotation-only, 51 too) gives same set."
+  ]
+}

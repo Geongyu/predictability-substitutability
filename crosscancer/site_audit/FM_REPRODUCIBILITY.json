@@ -1,0 +1,153 @@
+{
+  "analysis": "Foundation-model reproducibility (UNI/Virchow2/UNI2-h), reusing existing multi-FM 5-seed real AUROCs",
+  "by_cohort": {
+    "GASTRIC_STAD": {
+      "real_auroc": {
+        "uni2h": {
+          "ebv": 0.9007,
+          "erbb2_amp": 0.5845,
+          "lauren_diffuse": 0.6033,
+          "msi_h": 0.867
+        },
+        "uni": {
+          "ebv": 0.9477,
+          "erbb2_amp": 0.6444,
+          "lauren_diffuse": 0.5364,
+          "msi_h": 0.8599
+        },
+        "virchow2": {
+          "ebv": 0.8798,
+          "erbb2_amp": 0.6682,
+          "lauren_diffuse": 0.6404,
+          "msi_h": 0.8795
+        }
+      },
+      "rank_stability_spearman": {
+        "uni_vs_uni2h": 0.8,
+        "uni_vs_virchow2": 1.0
+      }
+    },
+    "HEADNECK_HNSC": {
+      "real_auroc": {
+        "virchow2": {
+          "egfr_amp": 0.5399,
+          "grade_high": 0.8157,
+          "hpv_pos": 0.9199
+        },
+        "uni2h": {
+          "egfr_amp": 0.5046,
+          "grade_high": 0.7469,
+          "hpv_pos": 0.9559
+        },
+        "uni": {
+          "egfr_amp": 0.6039,
+          "grade_high": 0.8152,
+          "hpv_pos": 0.9594
+        }
+      },
+      "rank_stability_spearman": {
+        "uni_vs_virchow2": 1.0,
+        "uni_vs_uni2h": 1.0
+      }
+    },
+    "LUNG_NSCLC": {
+      "real_auroc": {
+        "uni2h": {
+          "egfr_activating": 0.8818,
+          "histology_lusc": 0.9607,
+          "kras_g12c": 0.7607
+        },
+        "uni": {
+          "egfr_activating": 0.8518,
+          "histology_lusc": 0.939,
+          "kras_g12c": 0.6809
+        },
+        "virchow2": {
+          "egfr_activating": 0.8833,
+          "histology_lusc": 0.9469,
+          "kras_g12c": 0.7404
+        }
+      },
+      "rank_stability_spearman": {
+        "uni_vs_uni2h": 1.0,
+        "uni_vs_virchow2": 1.0
+      }
+    },
+    "shuffle-null 5-seed robustness + bag-size (proba ~ tile count) confound check": {
+      "real_auroc": {
+        "uni": {
+          "anti_egfr_eligible": 0.7053,
+          "braf_v600": 0.8817,
+          "cms1_vs_rest": 0.912,
+          "cms2_vs_rest": 0.8707,
+          "cms3_vs_rest": 0.8396,
+          "cms4_vs_rest": 0.6606,
+          "msi_high": 0.9184
+        }
+      },
+      "rank_stability_spearman": {}
+    }
+  },
+  "fm_sensitive_endpoints": [
+    {
+      "cohort": "GASTRIC_STAD",
+      "endpoint": "lauren_diffuse",
+      "range": 0.104,
+      "per_fm": {
+        "uni2h": 0.6033,
+        "uni": 0.5364,
+        "virchow2": 0.6404
+      }
+    },
+    {
+      "cohort": "HEADNECK_HNSC",
+      "endpoint": "egfr_amp",
+      "range": 0.099,
+      "per_fm": {
+        "virchow2": 0.5399,
+        "uni2h": 0.5046,
+        "uni": 0.6039
+      }
+    },
+    {
+      "cohort": "GASTRIC_STAD",
+      "endpoint": "erbb2_amp",
+      "range": 0.084,
+      "per_fm": {
+        "uni2h": 0.5845,
+        "uni": 0.6444,
+        "virchow2": 0.6682
+      }
+    },
+    {
+      "cohort": "LUNG_NSCLC",
+      "endpoint": "kras_g12c",
+      "range": 0.08,
+      "per_fm": {
+        "uni2h": 0.7607,
+        "uni": 0.6809,
+        "virchow2": 0.7404
+      }
+    },
+    {
+      "cohort": "HEADNECK_HNSC",
+      "endpoint": "grade_high",
+      "range": 0.069,
+      "per_fm": {
+        "virchow2": 0.8157,
+        "uni2h": 0.7469,
+        "uni": 0.8152
+      }
+    },
+    {
+      "cohort": "GASTRIC_STAD",
+      "endpoint": "ebv",
+      "range": 0.068,
+      "per_fm": {
+        "uni2h": 0.9007,
+        "uni": 0.9477,
+        "virchow2": 0.8798
+      }
+    }
+  ]
+}

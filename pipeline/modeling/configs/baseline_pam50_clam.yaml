@@ -1,0 +1,22 @@
+task: pam50
+embedding_model: uni
+embedding_dim: 1024
+num_classes: 5   # LumA=0, LumB=1, Basal=2, HER2=3, Normal=4
+
+model:
+  hidden_dim: 512
+  att_dim: 256
+  dropout: 0.25
+
+train:
+  epochs: 50
+  lr: 2.0e-4
+  patience: 7
+  seed: 42
+
+data:
+  embedding_manifest: data/embedding_manifest_uni.csv
+  label_col: pam50
+  n_dummy_slides: 20
+
+output_dir: outputs

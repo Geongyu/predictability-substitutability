@@ -1,0 +1,165 @@
+{
+  "cancer": "COLORECTAL",
+  "leakage_guard": "cell-line-only",
+  "axes_n": {
+    "antiBRAF": 7,
+    "baseline": 42
+  },
+  "n_drugs": 286,
+  "n_discriminating": 63,
+  "axis_pair_distance": {
+    "antiBRAF__baseline": {
+      "kendall_tau": 0.132,
+      "therapeutic_distance": 0.868
+    }
+  },
+  "positive_control": {
+    "Dabrafenib": {
+      "most_sensitive": "antiBRAF",
+      "ok": true,
+      "z": {
+        "antiBRAF": -1.582,
+        "baseline": 0.409
+      }
+    },
+    "Trametinib": {
+      "most_sensitive": "antiBRAF",
+      "ok": true,
+      "z": {
+        "antiBRAF": -1.623,
+        "baseline": -0.892
+      }
+    },
+    "Selumetinib": {
+      "most_sensitive": "antiBRAF",
+      "ok": true,
+      "z": {
+        "antiBRAF": -1.32,
+        "baseline": -0.696
+      }
+    }
+  },
+  "top_discriminating": [
+    {
+      "drug": "IOX2",
+      "target": "EGLN1",
+      "antiBRAF_z": 2.249,
+      "baseline_z": 0.244,
+      "gap": 2.005,
+      "most_sensitive": "baseline"
+    },
+    {
+      "drug": "Dabrafenib",
+      "target": "BRAF",
+      "antiBRAF_z": -1.582,
+      "baseline_z": 0.409,
+      "gap": 1.992,
+      "most_sensitive": "antiBRAF"
+    },
+    {
+      "drug": "Bicalutamide",
+      "target": "AR",
+      "antiBRAF_z": 1.872,
+      "baseline_z": -0.045,
+      "gap": 1.917,
+      "most_sensitive": "baseline"
+    },
+    {
+      "drug": "PLX-4720",
+      "target": "BRAF",
+      "antiBRAF_z": -1.251,
+      "baseline_z": 0.66,
+      "gap": 1.911,
+      "most_sensitive": "antiBRAF"
+    },
+    {
+      "drug": "CHIR-99021",
+      "target": "GSK3A, GSK3B",
+      "antiBRAF_z": 1.813,
+      "baseline_z": 0.029,
+      "gap": 1.783,
+      "most_sensitive": "baseline"
+    },
+    {
+      "drug": "Elesclomol",
+      "target": "HSP90",
+      "antiBRAF_z": -1.118,
+      "baseline_z": 0.341,
+      "gap": 1.46,
+      "most_sensitive": "antiBRAF"
+    },
+    {
+      "drug": "SB590885",
+      "target": "BRAF",
+      "antiBRAF_z": -1.086,
+      "baseline_z": 0.174,
+      "gap": 1.259,
+      "most_sensitive": "antiBRAF"
+    },
+    {
+      "drug": "Sapitinib",
+      "target": "EGFR, ERBB2, ERBB3",
+      "antiBRAF_z": 0.875,
+      "baseline_z": -0.364,
+      "gap": 1.239,
+      "most_sensitive": "baseline"
+    },
+    {
+      "drug": "AZD3759",
+      "target": "EGFR",
+      "antiBRAF_z": 0.878,
+      "baseline_z": -0.321,
+      "gap": 1.199,
+      "most_sensitive": "baseline"
+    },
+    {
+      "drug": "CCT-018159",
+      "target": "HSP90",
+      "antiBRAF_z": 1.402,
+      "baseline_z": 0.319,
+      "gap": 1.083,
+      "most_sensitive": "baseline"
+    },
+    {
+      "drug": "Osimertinib",
+      "target": "EGFR",
+      "antiBRAF_z": 0.797,
+      "baseline_z": -0.257,
+      "gap": 1.055,
+      "most_sensitive": "baseline"
+    },
+    {
+      "drug": "Sepantronium bromide",
+      "target": "BIRC5",
+      "antiBRAF_z": -0.086,
+      "baseline_z": 0.932,
+      "gap": 1.018,
+      "most_sensitive": "antiBRAF"
+    },
+    {
+      "drug": "Tretinoin",
+      "target": "Retinoic acid",
+      "antiBRAF_z": 1.431,
+      "baseline_z": 0.462,
+      "gap": 0.969,
+      "most_sensitive": "baseline"
+    },
+    {
+      "drug": "Gefitinib",
+      "target": "EGFR",
+      "antiBRAF_z": 0.843,
+      "baseline_z": -0.12,
+      "gap": 0.964,
+      "most_sensitive": "baseline"
+    },
+    {
+      "drug": "ERK_6604",
+      "target": "ERK1,ERK2",
+      "antiBRAF_z": -1.318,
+      "baseline_z": -0.364,
+      "gap": 0.954,
+      "most_sensitive": "antiBRAF"
+    }
+  ],
+  "note": "Cell-line-only frozen map. cost = misrouting frequency (WSI MIL prediction) x therapeutic distance (below). MSI (ICI) and KRAS (antibody) axes excluded."
+}

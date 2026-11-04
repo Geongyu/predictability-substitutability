@@ -1,0 +1,34 @@
+{
+ "track": "COLORECTAL",
+ "purpose": "5-seed shuffle-null robustness",
+ "fm": "virchow2",
+ "feature_dim": 2560,
+ "claim_level": "hypothesis_only",
+ "critic_status": "pending",
+ "criterion": "real_auroc > null_mean + 2*null_sd (5 seed, ddof=1)",
+ "shuffle_seeds": [
+  42,
+  1,
+  2,
+  3,
+  4
+ ],
+ "endpoints": {
+  "braf_v600e": {
+   "real_auroc": 0.8798,
+   "n_pos": 15,
+   "n_hold": 152,
+   "null_mean": 0.602,
+   "null_sd": 0.1334,
+   "threshold": 0.8688,
+   "pass": true,
+   "null_seeds": [
+    0.6964,
+    0.5791,
+    0.763,
+    0.5518,
+    0.4195
+   ]
+  }
+ }
+}

@@ -1,0 +1,54 @@
+{
+  "task": "Yale pCR stratification",
+  "claim_level": "hypothesis_only",
+  "timestamp": "20260724_153134",
+  "cohort": {
+    "name": "Yale HER2-TUMOR-ROIS (trastuzumab pCR)",
+    "n_total": 85,
+    "n_responder": 36,
+    "n_non_responder": 49
+  },
+  "primary": {
+    "score_col": "antiher2_axis_score",
+    "auroc": 0.5334,
+    "ci_95": [
+      0.4114,
+      0.6533
+    ],
+    "n_bootstrap": 2000
+  },
+  "delong": null,
+  "falsification": {
+    "falsification_status": "negative",
+    "fail_ci_includes_null": true,
+    "fail_delong_not_significant": false,
+    "falsification_reasons": [
+      "(1) AUC 95% CI [0.411, 0.653] includes 0.5 (no signal)"
+    ],
+    "farahmand_reference": {
+      "auc": 0.8,
+      "ci": [
+        0.69,
+        0.88
+      ]
+    },
+    "our_ci_overlaps_farahmand": false
+  },
+  "reference": {
+    "farahmand_2022": {
+      "cv_auc": 0.8,
+      "ci": [
+        0.69,
+        0.88
+      ],
+      "note": "in-cohort CV; this analysis is out-of-cohort frozen transfer"
+    }
+  },
+  "inputs": {
+    "axis_scores": "breast/models/yale_antiher2_axis_scores.csv",
+    "pcr_labels": "yale/yale_pcr_labels.csv",
+    "patient_col": "case_id",
+    "score_col": "antiher2_axis_score",
+    "baseline_col": null
+  }
+}

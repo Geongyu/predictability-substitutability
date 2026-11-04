@@ -1,0 +1,15 @@
+{
+  "cancer": "GASTRIC_STAD",
+  "policy": "site-disjoint patient-level (split_policy_v0 logic)",
+  "split_hash": "8c11d6e3ac66ce0d",
+  "seed": 42,
+  "n_patients": 440,
+  "n_sites": 22,
+  "dist": {
+    "val": 66,
+    "test": 66,
+    "train": 308
+  },
+  "site_disjoint": true,
+  "patient_overlap": 0
+}

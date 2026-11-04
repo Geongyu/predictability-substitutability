@@ -1,0 +1,15 @@
+{
+  "cancer": "UCEC",
+  "policy": "site-disjoint patient-level (split_policy_v0 logic)",
+  "split_hash": "4844d6b7fcdbb8e4",
+  "seed": 42,
+  "n_patients": 528,
+  "n_sites": 30,
+  "dist": {
+    "train": 370,
+    "test": 79,
+    "val": 79
+  },
+  "site_disjoint": true,
+  "patient_overlap": 0
+}

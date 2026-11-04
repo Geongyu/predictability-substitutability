@@ -1,0 +1,85 @@
+{
+  "exp": "C1_step2B_receptor_routing",
+  "routing": "HER2+>antiHER2; ER+>endocrine; else chemo",
+  "pred_source": "breast/models/cptac_ext_predictions_indexed.csv",
+  "per_axis": {
+    "endocrine": {
+      "n": 180,
+      "mean_cost": 0.0347,
+      "misroute_rate": 0.05,
+      "mean_cost_ci95_patient": [
+        0.0,
+        0.0793
+      ]
+    },
+    "antiHER2": {
+      "n": 35,
+      "mean_cost": 0.4161,
+      "misroute_rate": 1.0,
+      "mean_cost_ci95_patient": [
+        0.395,
+        0.446
+      ]
+    },
+    "chemo": {
+      "n": 79,
+      "mean_cost": 0.5103,
+      "misroute_rate": 0.734,
+      "mean_cost_ci95_patient": [
+        0.417,
+        0.5957
+      ]
+    },
+    "headline_contrast": {
+      "value": 0.3814,
+      "ci95": [
+        0.3309,
+        0.4266
+      ],
+      "ci95_method": "patient-cluster bootstrap",
+      "excludes_zero": true,
+      "ci95_slide_level_deprecated": [
+        0.3476,
+        0.4201
+      ]
+    }
+  },
+  "confusion_true_to_pred": {
+    "endocrine": {
+      "endocrine": 171,
+      "chemo": 9
+    },
+    "antiHER2": {
+      "endocrine": 33,
+      "chemo": 2
+    },
+    "chemo": {
+      "endocrine": 58,
+      "chemo": 21
+    }
+  },
+  "prediction_base_rates": {
+    "predicted": {
+      "endocrine": 0.891,
+      "antiHER2": 0.0,
+      "chemo": 0.109
+    },
+    "actual": {
+      "endocrine": 0.612,
+      "antiHER2": 0.119,
+      "chemo": 0.269
+    }
+  },
+  "mechanism": "On external CPTAC the receptor heads collapse to the majority class: predicted endocrine 89% (actual 61%), antiHER2 0% (actual 12%), chemo 11% (actual 27%). (1) The HER2 head never fires positive externally (consistent with AUROC 0.53), so HER2+ is 100% mis-routed. (2) ER over-call (73% of TNBC called ER+) gives 73% chemo mis-route. The 5% endocrine mis-route reflects majority-class collapse, not H&E skill.",
+  "honest_reading": "Robust result: the HER2 axis (100% mis-route under both routings; molecular test required). Endocrine/chemo per-axis cost depends on routing scheme and external calibration (PAM50 51% vs receptor 5% / PAM50 14% vs receptor 73%) and does not support a safety claim. Only the headline contrast (antiHER2-endocrine) is robust under both routings (0.340/0.381, CI excludes 0).",
+  "claim_level": "hypothesis_only",
+  "routing_threshold": 0.5,
+  "ci_method": {
+    "resample_unit": "patient (cluster bootstrap)",
+    "n_bootstrap": 5000,
+    "seed": 42,
+    "n_slides": 294,
+    "n_patients": 95,
+    "note": "Slide-level bootstrap is pseudo-replicated (mean 3.09 slides/patient) and underestimates the CI; patient-cluster bootstrap is used."
+  }
+}

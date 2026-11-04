@@ -1,0 +1,23 @@
+{
+  "cohort": "COLORECTAL",
+  "n_slides": 523,
+  "label_site_imbalance": {
+    "braf_v600e": {
+      "n": 523,
+      "n_pos": 48,
+      "cramers_v_label_vs_site": 0.333,
+      "top_site_pos_fraction": 0.292
+    }
+  },
+  "site_predictability": {
+    "cv": "StratifiedGroupKFold(5) on case_id",
+    "n_patients": 516,
+    "n_multislide_extra": 7,
+    "n_site_classes": 17,
+    "macro_auroc": 0.9513,
+    "permutation_null_mean": 0.498,
+    "permutation_null_sd": 0.01,
+    "above_null": true,
+    "interpretation": "High AUROC = H&E embeddings strongly predict TSS site, i.e. a learned site signature (Howard 2021). Group-aware (patient-level) CV, so no multi-slide leakage."
+  }
+}

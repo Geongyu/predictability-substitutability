@@ -1,0 +1,38 @@
+{
+ "track": "HEADNECK_HNSC",
+ "purpose": "pixel-mean baseline",
+ "claim_level": "hypothesis_only",
+ "critic_status": "pending",
+ "endpoints": {
+  "hpv_pos": {
+   "auc": 0.9224,
+   "ci95": [
+    0.8536,
+    0.9745
+   ],
+   "n_pos": 26,
+   "n_hold": 135,
+   "method": "pixel-mean(slide mean-pool→patient mean)→StandardScaler→LogReg(balanced)"
+  },
+  "egfr_amp": {
+   "auc": 0.5403,
+   "ci95": [
+    0.4048,
+    0.6791
+   ],
+   "n_pos": 17,
+   "n_hold": 152,
+   "method": "pixel-mean(slide mean-pool→patient mean)→StandardScaler→LogReg(balanced)"
+  },
+  "grade_high": {
+   "auc": 0.5902,
+   "ci95": [
+    0.4869,
+    0.7007
+   ],
+   "n_pos": 41,
+   "n_hold": 147,
+   "method": "pixel-mean(slide mean-pool→patient mean)→StandardScaler→LogReg(balanced)"
+  }
+ }
+}

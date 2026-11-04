@@ -1,0 +1,15 @@
+{
+  "cancer": "COLORECTAL",
+  "policy": "site-disjoint patient-level (split_policy_v0 logic)",
+  "split_hash": "6b5e7f0ec176b27f",
+  "seed": 42,
+  "n_patients": 534,
+  "n_sites": 37,
+  "dist": {
+    "test": 80,
+    "val": 80,
+    "train": 374
+  },
+  "site_disjoint": true,
+  "patient_overlap": 0
+}

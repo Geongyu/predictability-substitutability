@@ -1,0 +1,21 @@
+task: er_status
+embedding_model: uni
+embedding_dim: 1024
+
+model:
+  hidden_dim: 512
+  att_dim: 256
+  dropout: 0.25
+
+train:
+  epochs: 50
+  lr: 2.0e-4
+  patience: 7
+  seed: 42
+
+data:
+  embedding_manifest: data/embedding_manifest_uni.csv
+  label_col: er
+  n_dummy_slides: 20
+
+output_dir: outputs

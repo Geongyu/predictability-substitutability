@@ -1,0 +1,39 @@
+{
+  "purpose": "Routing scheme frozen before computing cost. Fixes the marker-to-treatment-axis mapping and the cost-direction hypothesis before results are seen.",
+  "cancer": "COLORECTAL",
+  "claim_level": "hypothesis_only",
+  "critic_status": "pending",
+  "repo_commit_hash": "d3a614f88855eafd50bf764aaf1ec07e543c33b6",
+  "frozen_before_running": "Part B MIL (msi_high / anti_egfr_eligible / braf_v600)",
+  "axes": [
+    {
+      "marker": "msi_high",
+      "definition": "MSIsensor>=3.5 (fallback MANTIS>=0.4)",
+      "route_to": "anti-PD-1 (pembrolizumab)",
+      "clinical_anchor": "KEYNOTE-177",
+      "cost_hypothesis": "low",
+      "rationale": "MSI-H has known H&E correlates (tumour-infiltrating lymphocytes, medullary morphology) -> expected H&E-visible, low substitution cost."
+    },
+    {
+      "marker": "anti_egfr_eligible",
+      "definition": "all_ras==0 AND braf_v600==0 (all-RAS = KRAS/NRAS codon 12/13/61 activating)",
+      "route_to": "anti-EGFR (cetuximab / panitumumab)",
+      "clinical_anchor": "CRYSTAL, FIRE-3",
+      "cost_hypothesis": "high",
+      "rationale": "RAS mutation expected H&E-silent (no morphological correlate) -> the closer prediction is to random, the higher the routing substitution cost. Colorectal counterpart of breast HER2 (H&E-blind, high cost)."
+    },
+    {
+      "marker": "braf_v600",
+      "definition": "BRAF proteinChange V600*",
+      "route_to": "BRAF+EGFR combination (encorafenib+cetuximab)",
+      "clinical_anchor": "BEACON",
+      "cost_hypothesis": "partial",
+      "rationale": "BRAF-V600 partially correlates with morphology (CMS1/MSI, right-sided tumours) -> partially visible (previous internal holdout AUROC 0.868)."
+    }
+  ],
+  "cost_metric": {
+    "lead": "misroute_rate = routing disagreement rate (measured marker vs H&E-predicted marker). Distance-independent; like-with-like with breast receptor routing.",
+    "mean_cost": "Weighted by frozen_map therapeutic distance. Only antiBRAF__baseline=0.868 exists in the frozen map. MSI (ICI) and anti-EGFR (antibody) axes are excluded from frozen_map (monoculture does not capture ICI/antibody efficacy) -> mean_cost=null; a separately preregistered clinical distance is required."
+  },
+  "comparison_rule": "Internal holdout vs internal holdout only. Not mixed with breast CPTAC external-transfer results. Mutation axis vs mutation axis (breast HER2 vs colorectal all-RAS)."
+}

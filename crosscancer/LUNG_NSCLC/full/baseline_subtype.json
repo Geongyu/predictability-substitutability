@@ -1,0 +1,39 @@
+{
+ "track": "LUNG_NSCLC",
+ "purpose": "subtype-only baseline (non-circular cases only: lung EGFR/KRAS)",
+ "claim_level": "hypothesis_only",
+ "critic_status": "pending",
+ "note": "Not computed for other cancers/endpoints: subtype-only is circular there (the endpoint is itself the subtype axis).",
+ "endpoints": {
+  "egfr_activating": {
+   "endpoint": "egfr_activating",
+   "baseline": "histology-only(LUAD/LUSC train prevalence)",
+   "auc": 0.7668,
+   "ci95": [
+    0.7001,
+    0.8171
+   ],
+   "n_pos": 18,
+   "n_hold": 315,
+   "train_rate": {
+    "LUAD": 0.096,
+    "LUSC": 0.0065
+   }
+  },
+  "kras_g12c": {
+   "endpoint": "kras_g12c",
+   "baseline": "histology-only(LUAD/LUSC train prevalence)",
+   "auc": 0.7933,
+   "ci95": [
+    0.7643,
+    0.8217
+   ],
+   "n_pos": 15,
+   "n_hold": 315,
+   "train_rate": {
+    "LUAD": 0.1288,
+    "LUSC": 0.0
+   }
+  }
+ }
+}

@@ -1,0 +1,22 @@
+{
+  "exp": "C1_cost_step2A_therapeutic_distance",
+  "note": "cost = mis-routing frequency (confusion) x therapeutic distance. Therapeutic distance = 1 - Kendall tau on discriminating drugs; higher = costlier confusion of that axis pair.",
+  "n_discriminating_drugs": 170,
+  "axis_pair_distance": {
+    "endocrine__antiHER2": {
+      "kendall_tau": 0.605,
+      "top10_overlap": 0.4,
+      "therapeutic_distance": 0.395
+    },
+    "endocrine__chemo": {
+      "kendall_tau": 0.305,
+      "top10_overlap": 0.1,
+      "therapeutic_distance": 0.695
+    },
+    "antiHER2__chemo": {
+      "kendall_tau": 0.235,
+      "top10_overlap": 0.1,
+      "therapeutic_distance": 0.765
+    }
+  }
+}

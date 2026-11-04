@@ -1,0 +1,15 @@
+{
+  "cancer": "LUNG_NSCLC",
+  "policy": "site-disjoint patient-level (split_policy_v0 logic)",
+  "split_hash": "9100041e573fe1b4",
+  "seed": 42,
+  "n_patients": 1050,
+  "n_sites": 69,
+  "dist": {
+    "train": 735,
+    "val": 158,
+    "test": 157
+  },
+  "site_disjoint": true,
+  "patient_overlap": 0
+}

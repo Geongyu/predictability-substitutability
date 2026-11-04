@@ -1,0 +1,82 @@
+{
+ "track": "GASTRIC_STAD",
+ "purpose": "5-seed shuffle-null robustness",
+ "fm": "uni2h",
+ "feature_dim": 1536,
+ "claim_level": "hypothesis_only",
+ "critic_status": "pending",
+ "criterion": "real_auroc > null_mean + 2*null_sd (5 seed, ddof=1)",
+ "shuffle_seeds": [
+  42,
+  1,
+  2,
+  3,
+  4
+ ],
+ "endpoints": {
+  "lauren_diffuse": {
+   "real_auroc": 0.6033,
+   "n_pos": 31,
+   "n_hold": 58,
+   "null_mean": 0.5109,
+   "null_sd": 0.176,
+   "threshold": 0.8628,
+   "pass": false,
+   "null_seeds": [
+    0.7802,
+    0.5137,
+    0.4253,
+    0.3023,
+    0.5329
+   ]
+  },
+  "msi_h": {
+   "real_auroc": 0.867,
+   "n_pos": 24,
+   "n_hold": 107,
+   "null_mean": 0.5362,
+   "null_sd": 0.0415,
+   "threshold": 0.6191,
+   "pass": true,
+   "null_seeds": [
+    0.4649,
+    0.5397,
+    0.5648,
+    0.5658,
+    0.5457
+   ]
+  },
+  "erbb2_amp": {
+   "real_auroc": 0.5845,
+   "n_pos": 14,
+   "n_hold": 107,
+   "null_mean": 0.5267,
+   "null_sd": 0.1014,
+   "threshold": 0.7295,
+   "pass": false,
+   "null_seeds": [
+    0.6452,
+    0.5253,
+    0.5399,
+    0.3656,
+    0.5576
+   ]
+  },
+  "ebv": {
+   "real_auroc": 0.9007,
+   "n_pos": 7,
+   "n_hold": 89,
+   "null_mean": 0.6317,
+   "null_sd": 0.0816,
+   "threshold": 0.7948,
+   "pass": true,
+   "null_seeds": [
+    0.6794,
+    0.7509,
+    0.5871,
+    0.5889,
+    0.5523
+   ]
+  }
+ }
+}

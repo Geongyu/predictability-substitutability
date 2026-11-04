@@ -1,0 +1,64 @@
+{
+ "track": "HEADNECK_HNSC",
+ "purpose": "5-seed shuffle-null robustness",
+ "claim_level": "hypothesis_only",
+ "critic_status": "pending",
+ "criterion": "real_auroc > null_mean + 2*null_sd (5 seed, ddof=1)",
+ "shuffle_seeds": [
+  42,
+  1,
+  2,
+  3,
+  4
+ ],
+ "endpoints": {
+  "hpv_pos": {
+   "real_auroc": 0.9594,
+   "n_pos": 26,
+   "n_hold": 135,
+   "null_mean": 0.4135,
+   "null_sd": 0.188,
+   "threshold": 0.7896,
+   "pass": true,
+   "null_seeds": [
+    0.6796,
+    0.2526,
+    0.4294,
+    0.2167,
+    0.4894
+   ]
+  },
+  "egfr_amp": {
+   "real_auroc": 0.6039,
+   "n_pos": 17,
+   "n_hold": 152,
+   "null_mean": 0.365,
+   "null_sd": 0.1331,
+   "threshold": 0.6312,
+   "pass": false,
+   "null_seeds": [
+    0.3194,
+    0.2161,
+    0.3351,
+    0.5786,
+    0.3756
+   ]
+  },
+  "grade_high": {
+   "real_auroc": 0.8152,
+   "n_pos": 41,
+   "n_hold": 147,
+   "null_mean": 0.4539,
+   "null_sd": 0.0482,
+   "threshold": 0.5503,
+   "pass": true,
+   "null_seeds": [
+    0.4464,
+    0.5048,
+    0.4671,
+    0.4749,
+    0.3762
+   ]
+  }
+ }
+}

@@ -1,0 +1,89 @@
+{
+  "track": "Part B — treatment routing substitution cost (routing-fidelity, cost-of-substitution)",
+  "note": "misroute_rate = routing disagreement rate between measured marker and H&E-predicted marker (distance-independent; like-with-like with breast receptor routing). mean_cost only for axes with a frozen_map therapeutic distance (braf 0.868); MSI/anti-EGFR are excluded from frozen_map, so null. Treatment axes are operationalised only as routing-fidelity/cost-of-substitution (no drug-structure input, hypothesis_only).",
+  "claim_level": "hypothesis_only",
+  "critic_status": "pending",
+  "commit": "d3a614f88855eafd50bf764aaf1ec07e543c33b6",
+  "preregistered": "routing_scheme_preregistered.json",
+  "axes": {
+    "msi_high": {
+      "route_to": "anti-PD-1",
+      "cost_hypothesis": "low",
+      "mil_auroc": 0.9184,
+      "ci95": [
+        0.8499,
+        0.9694
+      ],
+      "shuffle_null_auroc": 0.6364,
+      "n_holdout": 161,
+      "n_pos": 21,
+      "exploratory": true,
+      "misroute_rate": 0.112,
+      "mean_cost": 0.07,
+      "mean_cost_note": "Preregistered clinical directional distance: (n_FN 7*0.9 + n_FP 11*0.45)/161. misroute_rate reproduces v1."
+    },
+    "anti_egfr_eligible": {
+      "route_to": "anti-EGFR",
+      "cost_hypothesis": "high",
+      "mil_auroc": 0.7053,
+      "ci95": [
+        0.6199,
+        0.7833
+      ],
+      "shuffle_null_auroc": 0.5385,
+      "n_holdout": 161,
+      "n_pos": 84,
+      "exploratory": false,
+      "misroute_rate": 0.416,
+      "mean_cost": 0.339,
+      "mean_cost_note": "Preregistered clinical directional distance: (n_FN 57*0.8 + n_FP 10*0.9)/161. misroute_rate reproduces v1."
+    },
+    "braf_v600": {
+      "route_to": "BRAF+EGFR",
+      "cost_hypothesis": "partial",
+      "mil_auroc": 0.8817,
+      "ci95": [
+        0.8172,
+        0.9378
+      ],
+      "shuffle_null_auroc": 0.6406,
+      "n_holdout": 161,
+      "n_pos": 15,
+      "exploratory": true,
+      "misroute_rate": 0.099,
+      "mean_cost": 0.086,
+      "mean_cost_note": "Keeps the frozen_map antiBRAF__baseline=0.868 cell-line therapeutic distance (unchanged from v1). Parallel clinical directional distance: see braf_v600_note in clinical_routing_distance_preregistered.json."
+    }
+  },
+  "shuffle_null_caveat": "shuffle_null_auroc is a single label-permutation estimate (seed=42) with high variance at small n_pos (15-21); see shuffle_null_robustness.json for the 5-seed null. patient_overlap=0 and site-disjoint split verified.",
+  "leakage_checks_passed": {
+    "patient_overlap": 0,
+    "site_disjoint": true,
+    "split_hash": "6b5e7f0ec176b27f(base)+site-map extend"
+  },
+  "track_v2": "v1 misroute_rate/AUROC verbatim, plus mean_cost filled in (preregistered clinical directional distance). misroute_rate/AUROC unchanged.",
+  "clinical_distance_preregistered": "clinical_routing_distance_preregistered.json",
+  "mean_cost_scale_caveat": "MSI/anti-EGFR mean_cost is on the clinical-decision scale (clinical_routing_distance_preregistered.json); braf mean_cost=0.086 stays on the cell-line frozen_map scale (0.868). The three values are not directly comparable or rankable.",
+  "misroute_reconciliation": {
+    "msi_high": {
+      "v1_misroute_rate": 0.112,
+      "recomputed_misroute_rate": 0.112,
+      "reproduces_v1": true,
+      "n_FN": 7,
+      "n_FP": 11,
+      "n_holdout": 161,
+      "d_FN": 0.9,
+      "d_FP": 0.45
+    },
+    "anti_egfr_eligible": {
+      "v1_misroute_rate": 0.416,
+      "recomputed_misroute_rate": 0.416,
+      "reproduces_v1": true,
+      "n_FN": 57,
+      "n_FP": 10,
+      "n_holdout": 161,
+      "d_FN": 0.8,
+      "d_FP": 0.9
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "cohort": "GASTRIC_STAD",
+  "n_slides": 439,
+  "label_site_imbalance": {
+    "msi_h": {
+      "n": 437,
+      "n_pos": 76,
+      "cramers_v_label_vs_site": 0.288,
+      "top_site_pos_fraction": 0.368
+    },
+    "erbb2_amp": {
+      "n": 437,
+      "n_pos": 54,
+      "cramers_v_label_vs_site": 0.169,
+      "top_site_pos_fraction": 0.241
+    },
+    "ebv": {
+      "n": 383,
+      "n_pos": 32,
+      "cramers_v_label_vs_site": 0.161,
+      "top_site_pos_fraction": 0.344
+    },
+    "lauren_diffuse": {
+      "n": 171,
+      "n_pos": 86,
+      "cramers_v_label_vs_site": 0.563,
+      "top_site_pos_fraction": 0.198
+    }
+  },
+  "site_predictability": {
+    "cv": "StratifiedGroupKFold(5) on case_id",
+    "n_patients": 413,
+    "n_multislide_extra": 26,
+    "n_site_classes": 9,
+    "macro_auroc": 0.9883,
+    "permutation_null_mean": 0.4842,
+    "permutation_null_sd": 0.0313,
+    "above_null": true,
+    "interpretation": "High AUROC = H&E embeddings strongly predict TSS site, i.e. a learned site signature (Howard 2021). Group-aware (patient-level) CV, so no multi-slide leakage."
+  }
+}

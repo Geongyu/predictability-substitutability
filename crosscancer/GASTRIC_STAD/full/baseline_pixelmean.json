@@ -1,0 +1,48 @@
+{
+ "track": "GASTRIC_STAD",
+ "purpose": "pixel-mean baseline",
+ "claim_level": "hypothesis_only",
+ "critic_status": "pending",
+ "endpoints": {
+  "lauren_diffuse": {
+   "auc": 0.6308,
+   "ci95": [
+    0.4779,
+    0.7836
+   ],
+   "n_pos": 31,
+   "n_hold": 58,
+   "method": "pixel-mean(slide mean-pool→patient mean)→StandardScaler→LogReg(balanced)"
+  },
+  "msi_h": {
+   "auc": 0.7771,
+   "ci95": [
+    0.6644,
+    0.8723
+   ],
+   "n_pos": 24,
+   "n_hold": 107,
+   "method": "pixel-mean(slide mean-pool→patient mean)→StandardScaler→LogReg(balanced)"
+  },
+  "erbb2_amp": {
+   "auc": 0.5607,
+   "ci95": [
+    0.409,
+    0.7177
+   ],
+   "n_pos": 14,
+   "n_hold": 107,
+   "method": "pixel-mean(slide mean-pool→patient mean)→StandardScaler→LogReg(balanced)"
+  },
+  "ebv": {
+   "auc": 0.8641,
+   "ci95": [
+    0.7118,
+    0.9719
+   ],
+   "n_pos": 7,
+   "n_hold": 89,
+   "method": "pixel-mean(slide mean-pool→patient mean)→StandardScaler→LogReg(balanced)"
+  }
+ }
+}

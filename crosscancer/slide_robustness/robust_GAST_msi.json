@@ -1,0 +1,358 @@
+{
+  "cohort": "GASTRIC_STAD",
+  "endpoint": "msi_h",
+  "A_multislide_concordance": {
+    "n_multislide_patients": 26,
+    "n_pos": 0,
+    "n_neg": 26,
+    "median_score_sd": 0.0007,
+    "median_score_range": 0.001,
+    "call_agree_rate@0.5": 0.9615,
+    "CONSTRAINT": "0 positive multi-slide patients: positive-class agreement cannot be measured. Agreement rates below are dominated by negatives (confident low scores), so whether HPV/MSI positive calls depend on slide sampling cannot be answered with this data.",
+    "per_patient": [
+      {
+        "case": "TCGA-CG-5722",
+        "label": 0,
+        "n_slides": 2,
+        "slide_scores": [
+          0.0238,
+          0.0013
+        ],
+        "score_sd": 0.0159,
+        "score_range": 0.0226,
+        "calls_agree@0.5": true
+      },
+      {
+        "case": "TCGA-D7-5577",
+        "label": 0,
+        "n_slides": 2,
+        "slide_scores": [
+          0.0648,
+          0.0866
+        ],
+        "score_sd": 0.0154,
+        "score_range": 0.0218,
+        "calls_agree@0.5": true
+      },
+      {
+        "case": "TCGA-D7-5578",
+        "label": 0,
+        "n_slides": 2,
+        "slide_scores": [
+          0.0068,
+          0.0001
+        ],
+        "score_sd": 0.0047,
+        "score_range": 0.0067,
+        "calls_agree@0.5": true
+      },
+      {
+        "case": "TCGA-D7-5579",
+        "label": 0,
+        "n_slides": 2,
+        "slide_scores": [
+          0.0004,
+          0.0
+        ],
+        "score_sd": 0.0003,
+        "score_range": 0.0004,
+        "calls_agree@0.5": true
+      },
+      {
+        "case": "TCGA-D7-6518",
+        "label": 0,
+        "n_slides": 2,
+        "slide_scores": [
+          0.0007,
+          0.0001
+        ],
+        "score_sd": 0.0004,
+        "score_range": 0.0006,
+        "calls_agree@0.5": true
+      },
+      {
+        "case": "TCGA-D7-6519",
+        "label": 0,
+        "n_slides": 2,
+        "slide_scores": [
+          0.0464,
+          0.0039
+        ],
+        "score_sd": 0.03,
+        "score_range": 0.0425,
+        "calls_agree@0.5": true
+      },
+      {
+        "case": "TCGA-D7-6520",
+        "label": 0,
+        "n_slides": 2,
+        "slide_scores": [
+          0.0009,
+          0.0
+        ],
+        "score_sd": 0.0006,
+        "score_range": 0.0009,
+        "calls_agree@0.5": true
+      },
+      {
+        "case": "TCGA-D7-6521",
+        "label": 0,
+        "n_slides": 2,
+        "slide_scores": [
+          0.0014,
+          0.0002
+        ],
+        "score_sd": 0.0008,
+        "score_range": 0.0011,
+        "calls_agree@0.5": true
+      },
+      {
+        "case": "TCGA-D7-6522",
+        "label": 0,
+        "n_slides": 2,
+        "slide_scores": [
+          0.0244,
+          0.0171
+        ],
+        "score_sd": 0.0052,
+        "score_range": 0.0073,
+        "calls_agree@0.5": true
+      },
+      {
+        "case": "TCGA-D7-6524",
+        "label": 0,
+        "n_slides": 2,
+        "slide_scores": [
+          0.0,
+          0.0
+        ],
+        "score_sd": 0.0,
+        "score_range": 0.0,
+        "calls_agree@0.5": true
+      },
+      {
+        "case": "TCGA-D7-6525",
+        "label": 0,
+        "n_slides": 2,
+        "slide_scores": [
+          0.0206,
+          0.0082
+        ],
+        "score_sd": 0.0088,
+        "score_range": 0.0124,
+        "calls_agree@0.5": true
+      },
+      {
+        "case": "TCGA-D7-6526",
+        "label": 0,
+        "n_slides": 2,
+        "slide_scores": [
+          0.0,
+          0.0
+        ],
+        "score_sd": 0.0,
+        "score_range": 0.0,
+        "calls_agree@0.5": true
+      },
+      {
+        "case": "TCGA-D7-6527",
+        "label": 0,
+        "n_slides": 2,
+        "slide_scores": [
+          0.0,
+          0.0005
+        ],
+        "score_sd": 0.0003,
+        "score_range": 0.0004,
+        "calls_agree@0.5": true
+      },
+      {
+        "case": "TCGA-D7-6528",
+        "label": 0,
+        "n_slides": 2,
+        "slide_scores": [
+          0.4403,
+          0.6069
+        ],
+        "score_sd": 0.1178,
+        "score_range": 0.1666,
+        "calls_agree@0.5": false
+      },
+      {
+        "case": "TCGA-D7-6817",
+        "label": 0,
+        "n_slides": 2,
+        "slide_scores": [
+          0.0146,
+          0.0025
+        ],
+        "score_sd": 0.0085,
+        "score_range": 0.0121,
+        "calls_agree@0.5": true
+      },
+      {
+        "case": "TCGA-D7-6818",
+        "label": 0,
+        "n_slides": 2,
+        "slide_scores": [
+          0.0001,
+          0.0751
+        ],
+        "score_sd": 0.053,
+        "score_range": 0.075,
+        "calls_agree@0.5": true
+      },
+      {
+        "case": "TCGA-D7-6820",
+        "label": 0,
+        "n_slides": 2,
+        "slide_scores": [
+          0.0001,
+          0.0
+        ],
+        "score_sd": 0.0,
+        "score_range": 0.0,
+        "calls_agree@0.5": true
+      },
+      {
+        "case": "TCGA-D7-6822",
+        "label": 0,
+        "n_slides": 2,
+        "slide_scores": [
+          0.0061,
+          0.0067
+        ],
+        "score_sd": 0.0004,
+        "score_range": 0.0006,
+        "calls_agree@0.5": true
+      },
+      {
+        "case": "TCGA-D7-8570",
+        "label": 0,
+        "n_slides": 2,
+        "slide_scores": [
+          0.0001,
+          0.1341
+        ],
+        "score_sd": 0.0948,
+        "score_range": 0.134,
+        "calls_agree@0.5": true
+      },
+      {
+        "case": "TCGA-D7-8572",
+        "label": 0,
+        "n_slides": 2,
+        "slide_scores": [
+          0.0014,
+          0.0009
+        ],
+        "score_sd": 0.0004,
+        "score_range": 0.0005,
+        "calls_agree@0.5": true
+      },
+      {
+        "case": "TCGA-D7-8573",
+        "label": 0,
+        "n_slides": 2,
+        "slide_scores": [
+          0.14,
+          0.0109
+        ],
+        "score_sd": 0.0913,
+        "score_range": 0.1292,
+        "calls_agree@0.5": true
+      },
+      {
+        "case": "TCGA-D7-8574",
+        "label": 0,
+        "n_slides": 2,
+        "slide_scores": [
+          0.0,
+          0.0005
+        ],
+        "score_sd": 0.0003,
+        "score_range": 0.0004,
+        "calls_agree@0.5": true
+      },
+      {
+        "case": "TCGA-D7-8575",
+        "label": 0,
+        "n_slides": 2,
+        "slide_scores": [
+          0.0001,
+          0.0044
+        ],
+        "score_sd": 0.0031,
+        "score_range": 0.0043,
+        "calls_agree@0.5": true
+      },
+      {
+        "case": "TCGA-D7-8576",
+        "label": 0,
+        "n_slides": 2,
+        "slide_scores": [
+          0.0,
+          0.0
+        ],
+        "score_sd": 0.0,
+        "score_range": 0.0,
+        "calls_agree@0.5": true
+      },
+      {
+        "case": "TCGA-D7-8578",
+        "label": 0,
+        "n_slides": 2,
+        "slide_scores": [
+          0.0,
+          0.0
+        ],
+        "score_sd": 0.0,
+        "score_range": 0.0,
+        "calls_agree@0.5": true
+      },
+      {
+        "case": "TCGA-D7-8579",
+        "label": 0,
+        "n_slides": 2,
+        "slide_scores": [
+          0.0007,
+          0.0
+        ],
+        "score_sd": 0.0005,
+        "score_range": 0.0007,
+        "calls_agree@0.5": true
+      }
+    ]
+  },
+  "B_region_robustness": {
+    "endpoint": "msi_h",
+    "n": 411,
+    "n_pos": 76,
+    "oof_auroc_meanpool": 0.8368,
+    "B_subsamples": 50,
+    "fracs": [
+      0.5,
+      0.25
+    ],
+    "pos": {
+      "median_sd@0.5": 0.0063,
+      "median_flip@0.5": 0.0,
+      "median_sd@0.25": 0.0103,
+      "median_flip@0.25": 0.0,
+      "median_top5pct_tile_share": 0.1576
+    },
+    "neg": {
+      "median_sd@0.5": 0.0002,
+      "median_flip@0.5": 0.0,
+      "median_sd@0.25": 0.0003,
+      "median_flip@0.25": 0.0,
+      "median_top5pct_tile_share": -0.0965
+    }
+  },
+  "NOT_FEASIBLE": {
+    "tumor_only_vs_wsi": "No tumour-region annotation -> not measurable.",
+    "necrosis_stroma_exclusion": "No tissue-type annotation -> not measurable.",
+    "attention_FM_cross": "Cross-cancer embeddings exist only for uni_v1 -> cross-FM attention not possible.",
+    "attention_seed_cross": "No trained CLAM model saved -> cross-seed attention requires CLAM training (GPU)."
+  }
+}

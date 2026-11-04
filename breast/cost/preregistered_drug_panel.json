@@ -1,0 +1,1971 @@
+{
+  "artifact": "PRE-REGISTERED discriminating drug panel (C1 cost-of-substitution)",
+  "purpose": "Fixed before observing final receptor-status routing results, to prevent cherry-picking",
+  "frozen_at": "2026-07-10T01:31:18",
+  "frozen_map_source": "frozen_map.json",
+  "repo_commit_at_freeze": "dbf123fbc",
+  "axes": [
+    "endocrine",
+    "antiHER2",
+    "chemo"
+  ],
+  "primary_panel_external_anchor": {
+    "rationale": "Axis assignment fixed by clinical pharmacology (outside the map), avoiding subtype_only circularity",
+    "n_resolved_in_map": 18,
+    "by_axis": {
+      "antiHER2": [
+        {
+          "drug": "Lapatinib",
+          "intended_axis": "antiHER2",
+          "in_map": true,
+          "z": {
+            "endocrine": -0.688,
+            "antiHER2": -1.547,
+            "chemo": -0.225
+          },
+          "map_most_sensitive_axis": "antiHER2",
+          "positive_control_ok": true
+        },
+        {
+          "drug": "Afatinib",
+          "intended_axis": "antiHER2",
+          "in_map": true,
+          "z": {
+            "endocrine": -0.438,
+            "antiHER2": -1.22,
+            "chemo": 0.37
+          },
+          "map_most_sensitive_axis": "antiHER2",
+          "positive_control_ok": true
+        },
+        {
+          "drug": "Sapitinib",
+          "intended_axis": "antiHER2",
+          "in_map": true,
+          "z": {
+            "endocrine": -0.425,
+            "antiHER2": -1.231,
+            "chemo": -0.012
+          },
+          "map_most_sensitive_axis": "antiHER2",
+          "positive_control_ok": true
+        },
+        {
+          "drug": "Tucatinib",
+          "intended_axis": "antiHER2",
+          "in_map": false
+        },
+        {
+          "drug": "Neratinib",
+          "intended_axis": "antiHER2",
+          "in_map": false
+        }
+      ],
+      "endocrine": [
+        {
+          "drug": "Fulvestrant",
+          "intended_axis": "endocrine",
+          "in_map": true,
+          "z": {
+            "endocrine": -0.558,
+            "antiHER2": -0.123,
+            "chemo": 0.145
+          },
+          "map_most_sensitive_axis": "endocrine",
+          "positive_control_ok": true
+        },
+        {
+          "drug": "Tamoxifen",
+          "intended_axis": "endocrine",
+          "in_map": true,
+          "z": {
+            "endocrine": 0.137,
+            "antiHER2": -0.0,
+            "chemo": -0.214
+          },
+          "map_most_sensitive_axis": "chemo",
+          "positive_control_ok": false
+        },
+        {
+          "drug": "Palbociclib",
+          "intended_axis": "endocrine",
+          "in_map": true,
+          "z": {
+            "endocrine": 0.703,
+            "antiHER2": 0.327,
+            "chemo": 0.528
+          },
+          "map_most_sensitive_axis": "antiHER2",
+          "positive_control_ok": false
+        },
+        {
+          "drug": "Ribociclib",
+          "intended_axis": "endocrine",
+          "in_map": true,
+          "z": {
+            "endocrine": 0.499,
+            "antiHER2": 0.225,
+            "chemo": 0.78
+          },
+          "map_most_sensitive_axis": "antiHER2",
+          "positive_control_ok": false
+        },
+        {
+          "drug": "Alpelisib",
+          "intended_axis": "endocrine",
+          "in_map": true,
+          "z": {
+            "endocrine": -0.484,
+            "antiHER2": -1.008,
+            "chemo": 0.067
+          },
+          "map_most_sensitive_axis": "antiHER2",
+          "positive_control_ok": false
+        },
+        {
+          "drug": "Taselisib",
+          "intended_axis": "endocrine",
+          "in_map": true,
+          "z": {
+            "endocrine": -0.282,
+            "antiHER2": -0.859,
+            "chemo": -0.077
+          },
+          "map_most_sensitive_axis": "antiHER2",
+          "positive_control_ok": false
+        },
+        {
+          "drug": "Pictilisib",
+          "intended_axis": "endocrine",
+          "in_map": true,
+          "z": {
+            "endocrine": 0.026,
+            "antiHER2": -0.379,
+            "chemo": -0.206
+          },
+          "map_most_sensitive_axis": "antiHER2",
+          "positive_control_ok": false
+        },
+        {
+          "drug": "AZD8186",
+          "intended_axis": "endocrine",
+          "in_map": true,
+          "z": {
+            "endocrine": -0.239,
+            "antiHER2": -0.114,
+            "chemo": -0.273
+          },
+          "map_most_sensitive_axis": "chemo",
+          "positive_control_ok": false
+        },
+        {
+          "drug": "Capivasertib",
+          "intended_axis": "endocrine",
+          "in_map": false
+        }
+      ],
+      "chemo": [
+        {
+          "drug": "Paclitaxel",
+          "intended_axis": "chemo",
+          "in_map": true,
+          "z": {
+            "endocrine": 0.849,
+            "antiHER2": 0.549,
+            "chemo": -0.009
+          },
+          "map_most_sensitive_axis": "chemo",
+          "positive_control_ok": true
+        },
+        {
+          "drug": "Docetaxel",
+          "intended_axis": "chemo",
+          "in_map": true,
+          "z": {
+            "endocrine": 0.733,
+            "antiHER2": 0.477,
+            "chemo": 0.083
+          },
+          "map_most_sensitive_axis": "chemo",
+          "positive_control_ok": true
+        },
+        {
+          "drug": "Cisplatin",
+          "intended_axis": "chemo",
+          "in_map": true,
+          "z": {
+            "endocrine": 1.22,
+            "antiHER2": 0.76,
+            "chemo": 0.395
+          },
+          "map_most_sensitive_axis": "chemo",
+          "positive_control_ok": true
+        },
+        {
+          "drug": "Gemcitabine",
+          "intended_axis": "chemo",
+          "in_map": true,
+          "z": {
+            "endocrine": 1.585,
+            "antiHER2": 1.332,
+            "chemo": 0.65
+          },
+          "map_most_sensitive_axis": "chemo",
+          "positive_control_ok": true
+        },
+        {
+          "drug": "Doxorubicin",
+          "intended_axis": "chemo",
+          "in_map": false
+        },
+        {
+          "drug": "Vinorelbine",
+          "intended_axis": "chemo",
+          "in_map": true,
+          "z": {
+            "endocrine": 0.786,
+            "antiHER2": 0.413,
+            "chemo": 0.232
+          },
+          "map_most_sensitive_axis": "chemo",
+          "positive_control_ok": true
+        },
+        {
+          "drug": "Olaparib",
+          "intended_axis": "chemo",
+          "in_map": true,
+          "z": {
+            "endocrine": 0.866,
+            "antiHER2": 0.451,
+            "chemo": 0.27
+          },
+          "map_most_sensitive_axis": "chemo",
+          "positive_control_ok": true
+        },
+        {
+          "drug": "Talazoparib",
+          "intended_axis": "chemo",
+          "in_map": true,
+          "z": {
+            "endocrine": 0.96,
+            "antiHER2": 0.773,
+            "chemo": 0.327
+          },
+          "map_most_sensitive_axis": "chemo",
+          "positive_control_ok": true
+        }
+      ]
+    },
+    "positive_control_summary": {
+      "endocrine": "1/8 map most-sensitive axis = intended axis",
+      "antiHER2": "3/3 map most-sensitive axis = intended axis",
+      "chemo": "7/7 map most-sensitive axis = intended axis"
+    }
+  },
+  "secondary_panel_data_driven": {
+    "criterion": "drugs present on all 3 frozen_map axes with gap (max-min z) >= 0.5",
+    "n": 170,
+    "drugs": [
+      {
+        "drug": "Tretinoin",
+        "gap": 3.292,
+        "z": {
+          "endocrine": -2.02,
+          "antiHER2": -0.721,
+          "chemo": 1.272
+        },
+        "most_sensitive_axis": "endocrine"
+      },
+      {
+        "drug": "SL0101",
+        "gap": 2.857,
+        "z": {
+          "endocrine": -1.315,
+          "antiHER2": -0.505,
+          "chemo": 1.542
+        },
+        "most_sensitive_axis": "endocrine"
+      },
+      {
+        "drug": "CCT-018159",
+        "gap": 2.723,
+        "z": {
+          "endocrine": -1.465,
+          "antiHER2": -0.186,
+          "chemo": 1.258
+        },
+        "most_sensitive_axis": "endocrine"
+      },
+      {
+        "drug": "SB505124",
+        "gap": 1.998,
+        "z": {
+          "endocrine": -0.591,
+          "antiHER2": 0.593,
+          "chemo": 1.407
+        },
+        "most_sensitive_axis": "endocrine"
+      },
+      {
+        "drug": "AZD7762",
+        "gap": 1.852,
+        "z": {
+          "endocrine": 1.723,
+          "antiHER2": 1.015,
+          "chemo": -0.129
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Ibrutinib",
+        "gap": 1.81,
+        "z": {
+          "endocrine": 0.274,
+          "antiHER2": -1.536,
+          "chemo": -0.022
+        },
+        "most_sensitive_axis": "antiHER2"
+      },
+      {
+        "drug": "MG-132",
+        "gap": 1.611,
+        "z": {
+          "endocrine": 1.211,
+          "antiHER2": 0.843,
+          "chemo": -0.4
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Afatinib",
+        "gap": 1.59,
+        "z": {
+          "endocrine": -0.438,
+          "antiHER2": -1.22,
+          "chemo": 0.37
+        },
+        "most_sensitive_axis": "antiHER2"
+      },
+      {
+        "drug": "Osimertinib",
+        "gap": 1.551,
+        "z": {
+          "endocrine": -0.409,
+          "antiHER2": -1.275,
+          "chemo": 0.276
+        },
+        "most_sensitive_axis": "antiHER2"
+      },
+      {
+        "drug": "IGF1R_3801",
+        "gap": 1.39,
+        "z": {
+          "endocrine": 1.419,
+          "antiHER2": 1.23,
+          "chemo": 0.029
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "MK-1775",
+        "gap": 1.385,
+        "z": {
+          "endocrine": 1.557,
+          "antiHER2": 1.204,
+          "chemo": 0.172
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "ERK_2440",
+        "gap": 1.349,
+        "z": {
+          "endocrine": 1.205,
+          "antiHER2": 0.842,
+          "chemo": -0.144
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Lapatinib",
+        "gap": 1.322,
+        "z": {
+          "endocrine": -0.688,
+          "antiHER2": -1.547,
+          "chemo": -0.225
+        },
+        "most_sensitive_axis": "antiHER2"
+      },
+      {
+        "drug": "AZD6738",
+        "gap": 1.3,
+        "z": {
+          "endocrine": 1.136,
+          "antiHER2": 0.423,
+          "chemo": -0.164
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "BMS-536924",
+        "gap": 1.299,
+        "z": {
+          "endocrine": 1.564,
+          "antiHER2": 1.221,
+          "chemo": 0.265
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Staurosporine",
+        "gap": 1.283,
+        "z": {
+          "endocrine": 1.071,
+          "antiHER2": 0.666,
+          "chemo": -0.212
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Sapitinib",
+        "gap": 1.219,
+        "z": {
+          "endocrine": -0.425,
+          "antiHER2": -1.231,
+          "chemo": -0.012
+        },
+        "most_sensitive_axis": "antiHER2"
+      },
+      {
+        "drug": "Bortezomib",
+        "gap": 1.188,
+        "z": {
+          "endocrine": 0.524,
+          "antiHER2": 0.335,
+          "chemo": -0.664
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "BDP-00009066",
+        "gap": 1.18,
+        "z": {
+          "endocrine": 1.111,
+          "antiHER2": 0.916,
+          "chemo": -0.069
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Elesclomol",
+        "gap": 1.174,
+        "z": {
+          "endocrine": -1.106,
+          "antiHER2": 0.068,
+          "chemo": -0.231
+        },
+        "most_sensitive_axis": "endocrine"
+      },
+      {
+        "drug": "LMP744",
+        "gap": 1.172,
+        "z": {
+          "endocrine": 1.516,
+          "antiHER2": 0.964,
+          "chemo": 0.344
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Avagacestat",
+        "gap": 1.139,
+        "z": {
+          "endocrine": 0.938,
+          "antiHER2": 0.136,
+          "chemo": -0.201
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "MK-8776",
+        "gap": 1.138,
+        "z": {
+          "endocrine": 1.162,
+          "antiHER2": 0.111,
+          "chemo": 0.024
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "BMS-754807",
+        "gap": 1.087,
+        "z": {
+          "endocrine": 1.356,
+          "antiHER2": 1.177,
+          "chemo": 0.269
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "VE821",
+        "gap": 1.083,
+        "z": {
+          "endocrine": 1.173,
+          "antiHER2": 0.401,
+          "chemo": 0.09
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Alpelisib",
+        "gap": 1.075,
+        "z": {
+          "endocrine": -0.484,
+          "antiHER2": -1.008,
+          "chemo": 0.067
+        },
+        "most_sensitive_axis": "antiHER2"
+      },
+      {
+        "drug": "ERK_6604",
+        "gap": 1.074,
+        "z": {
+          "endocrine": 1.302,
+          "antiHER2": 1.119,
+          "chemo": 0.228
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "BI-2536",
+        "gap": 1.061,
+        "z": {
+          "endocrine": 1.314,
+          "antiHER2": 1.18,
+          "chemo": 0.253
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "BPD-00008900",
+        "gap": 1.018,
+        "z": {
+          "endocrine": 1.051,
+          "antiHER2": 0.598,
+          "chemo": 0.033
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "TW 37",
+        "gap": 1.017,
+        "z": {
+          "endocrine": 0.931,
+          "antiHER2": 0.963,
+          "chemo": -0.054
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Foretinib",
+        "gap": 1.014,
+        "z": {
+          "endocrine": 1.278,
+          "antiHER2": 1.221,
+          "chemo": 0.264
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "CDK9_5576",
+        "gap": 1.009,
+        "z": {
+          "endocrine": 0.915,
+          "antiHER2": 0.571,
+          "chemo": -0.094
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Bleomycin (50 uM)",
+        "gap": 1.007,
+        "z": {
+          "endocrine": 1.342,
+          "antiHER2": 1.183,
+          "chemo": 0.335
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Topotecan",
+        "gap": 1.0,
+        "z": {
+          "endocrine": 1.417,
+          "antiHER2": 0.912,
+          "chemo": 0.417
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "AZD5438",
+        "gap": 0.991,
+        "z": {
+          "endocrine": 0.964,
+          "antiHER2": 0.333,
+          "chemo": -0.027
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Teniposide",
+        "gap": 0.991,
+        "z": {
+          "endocrine": 1.309,
+          "antiHER2": 0.818,
+          "chemo": 0.318
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "PD0325901",
+        "gap": 0.986,
+        "z": {
+          "endocrine": 1.321,
+          "antiHER2": 0.974,
+          "chemo": 0.335
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "WIKI4",
+        "gap": 0.98,
+        "z": {
+          "endocrine": 0.702,
+          "antiHER2": 0.296,
+          "chemo": -0.278
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Bicalutamide",
+        "gap": 0.977,
+        "z": {
+          "endocrine": 0.926,
+          "antiHER2": -0.051,
+          "chemo": 0.403
+        },
+        "most_sensitive_axis": "antiHER2"
+      },
+      {
+        "drug": "MIM1",
+        "gap": 0.976,
+        "z": {
+          "endocrine": 1.06,
+          "antiHER2": 0.753,
+          "chemo": 0.084
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Crizotinib",
+        "gap": 0.972,
+        "z": {
+          "endocrine": 1.231,
+          "antiHER2": 1.023,
+          "chemo": 0.259
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Camptothecin",
+        "gap": 0.969,
+        "z": {
+          "endocrine": 1.44,
+          "antiHER2": 1.259,
+          "chemo": 0.471
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Pevonedistat",
+        "gap": 0.963,
+        "z": {
+          "endocrine": 1.252,
+          "antiHER2": 0.686,
+          "chemo": 0.289
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "KU-55933",
+        "gap": 0.963,
+        "z": {
+          "endocrine": 0.544,
+          "antiHER2": 0.318,
+          "chemo": -0.419
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Telomerase Inhibitor IX",
+        "gap": 0.952,
+        "z": {
+          "endocrine": 0.667,
+          "antiHER2": 0.847,
+          "chemo": -0.105
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "BX795",
+        "gap": 0.943,
+        "z": {
+          "endocrine": 1.051,
+          "antiHER2": 0.108,
+          "chemo": 0.877
+        },
+        "most_sensitive_axis": "antiHER2"
+      },
+      {
+        "drug": "Gemcitabine",
+        "gap": 0.935,
+        "z": {
+          "endocrine": 1.585,
+          "antiHER2": 1.332,
+          "chemo": 0.65
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Trametinib",
+        "gap": 0.931,
+        "z": {
+          "endocrine": 1.242,
+          "antiHER2": 0.852,
+          "chemo": 0.311
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Mitoxantrone",
+        "gap": 0.923,
+        "z": {
+          "endocrine": 1.242,
+          "antiHER2": 0.758,
+          "chemo": 0.319
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "VE-822",
+        "gap": 0.919,
+        "z": {
+          "endocrine": 0.875,
+          "antiHER2": 0.237,
+          "chemo": -0.044
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Tozasertib",
+        "gap": 0.909,
+        "z": {
+          "endocrine": 1.319,
+          "antiHER2": 1.125,
+          "chemo": 0.41
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "AZD1332",
+        "gap": 0.896,
+        "z": {
+          "endocrine": 0.942,
+          "antiHER2": 0.521,
+          "chemo": 0.046
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "5-azacytidine",
+        "gap": 0.885,
+        "z": {
+          "endocrine": 0.713,
+          "antiHER2": 0.76,
+          "chemo": -0.125
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Cediranib",
+        "gap": 0.882,
+        "z": {
+          "endocrine": 0.732,
+          "antiHER2": 0.893,
+          "chemo": 0.011
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Alisertib",
+        "gap": 0.866,
+        "z": {
+          "endocrine": 1.16,
+          "antiHER2": 1.14,
+          "chemo": 0.294
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "JAK_8517",
+        "gap": 0.862,
+        "z": {
+          "endocrine": 0.901,
+          "antiHER2": 0.316,
+          "chemo": 0.039
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Dasatinib",
+        "gap": 0.861,
+        "z": {
+          "endocrine": 1.024,
+          "antiHER2": 0.747,
+          "chemo": 0.163
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Ulixertinib",
+        "gap": 0.859,
+        "z": {
+          "endocrine": 1.093,
+          "antiHER2": 0.521,
+          "chemo": 0.234
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Paclitaxel",
+        "gap": 0.858,
+        "z": {
+          "endocrine": 0.849,
+          "antiHER2": 0.549,
+          "chemo": -0.009
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "LMB_AB3",
+        "gap": 0.854,
+        "z": {
+          "endocrine": 0.536,
+          "antiHER2": 0.222,
+          "chemo": -0.318
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Dactinomycin",
+        "gap": 0.844,
+        "z": {
+          "endocrine": 1.009,
+          "antiHER2": 0.974,
+          "chemo": 0.165
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Dinaciclib",
+        "gap": 0.833,
+        "z": {
+          "endocrine": 0.758,
+          "antiHER2": 0.343,
+          "chemo": -0.075
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Cisplatin",
+        "gap": 0.825,
+        "z": {
+          "endocrine": 1.22,
+          "antiHER2": 0.76,
+          "chemo": 0.395
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "IOX2",
+        "gap": 0.825,
+        "z": {
+          "endocrine": 0.678,
+          "antiHER2": 0.261,
+          "chemo": -0.147
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Mycophenolic acid",
+        "gap": 0.811,
+        "z": {
+          "endocrine": 1.2,
+          "antiHER2": 1.191,
+          "chemo": 0.389
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Daporinad",
+        "gap": 0.808,
+        "z": {
+          "endocrine": 1.068,
+          "antiHER2": 0.757,
+          "chemo": 0.26
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "BMS-345541",
+        "gap": 0.808,
+        "z": {
+          "endocrine": 1.068,
+          "antiHER2": 0.531,
+          "chemo": 0.26
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Lenalidomide",
+        "gap": 0.803,
+        "z": {
+          "endocrine": 0.776,
+          "antiHER2": -0.027,
+          "chemo": 0.124
+        },
+        "most_sensitive_axis": "antiHER2"
+      },
+      {
+        "drug": "AZ960",
+        "gap": 0.802,
+        "z": {
+          "endocrine": 0.996,
+          "antiHER2": 0.709,
+          "chemo": 0.194
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Wee1 Inhibitor",
+        "gap": 0.798,
+        "z": {
+          "endocrine": 0.625,
+          "antiHER2": 0.521,
+          "chemo": -0.173
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Mirin",
+        "gap": 0.792,
+        "z": {
+          "endocrine": 0.634,
+          "antiHER2": 0.678,
+          "chemo": -0.114
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "GSK2276186C",
+        "gap": 0.787,
+        "z": {
+          "endocrine": 0.814,
+          "antiHER2": 0.398,
+          "chemo": 0.027
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Irinotecan",
+        "gap": 0.785,
+        "z": {
+          "endocrine": 1.219,
+          "antiHER2": 0.976,
+          "chemo": 0.434
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Taselisib",
+        "gap": 0.782,
+        "z": {
+          "endocrine": -0.282,
+          "antiHER2": -0.859,
+          "chemo": -0.077
+        },
+        "most_sensitive_axis": "antiHER2"
+      },
+      {
+        "drug": "Selumetinib",
+        "gap": 0.782,
+        "z": {
+          "endocrine": 1.037,
+          "antiHER2": 0.744,
+          "chemo": 0.255
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Refametinib",
+        "gap": 0.779,
+        "z": {
+          "endocrine": 1.029,
+          "antiHER2": 0.566,
+          "chemo": 0.25
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "PD173074",
+        "gap": 0.775,
+        "z": {
+          "endocrine": 0.971,
+          "antiHER2": 0.506,
+          "chemo": 0.196
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "ICL-SIRT078",
+        "gap": 0.768,
+        "z": {
+          "endocrine": 0.744,
+          "antiHER2": 0.401,
+          "chemo": -0.024
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Axitinib",
+        "gap": 0.763,
+        "z": {
+          "endocrine": 0.8,
+          "antiHER2": 0.363,
+          "chemo": 0.037
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "YK-4-279",
+        "gap": 0.763,
+        "z": {
+          "endocrine": 1.018,
+          "antiHER2": 0.601,
+          "chemo": 0.255
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "UMI-77",
+        "gap": 0.755,
+        "z": {
+          "endocrine": 0.403,
+          "antiHER2": 0.443,
+          "chemo": -0.312
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Obatoclax Mesylate",
+        "gap": 0.754,
+        "z": {
+          "endocrine": 0.58,
+          "antiHER2": 0.951,
+          "chemo": 0.197
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "VSP34_8731",
+        "gap": 0.752,
+        "z": {
+          "endocrine": 0.522,
+          "antiHER2": 0.448,
+          "chemo": -0.23
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "LJI308",
+        "gap": 0.748,
+        "z": {
+          "endocrine": 0.911,
+          "antiHER2": 0.401,
+          "chemo": 0.163
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "VX-11e",
+        "gap": 0.746,
+        "z": {
+          "endocrine": 1.076,
+          "antiHER2": 0.582,
+          "chemo": 0.33
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Pyridostatin",
+        "gap": 0.745,
+        "z": {
+          "endocrine": 0.707,
+          "antiHER2": 0.552,
+          "chemo": -0.038
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Epirubicin",
+        "gap": 0.735,
+        "z": {
+          "endocrine": 1.038,
+          "antiHER2": 0.923,
+          "chemo": 0.303
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Lestaurtinib",
+        "gap": 0.73,
+        "z": {
+          "endocrine": 0.9,
+          "antiHER2": 0.808,
+          "chemo": 0.17
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "CT7033-2",
+        "gap": 0.73,
+        "z": {
+          "endocrine": 0.997,
+          "antiHER2": 0.768,
+          "chemo": 0.267
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "GSK2256098C",
+        "gap": 0.722,
+        "z": {
+          "endocrine": 0.651,
+          "antiHER2": 0.326,
+          "chemo": -0.071
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "CDK9_5038",
+        "gap": 0.717,
+        "z": {
+          "endocrine": 0.72,
+          "antiHER2": 0.371,
+          "chemo": 0.003
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "GSK591",
+        "gap": 0.716,
+        "z": {
+          "endocrine": 0.738,
+          "antiHER2": 0.022,
+          "chemo": 0.153
+        },
+        "most_sensitive_axis": "antiHER2"
+      },
+      {
+        "drug": "N30652-18-1",
+        "gap": 0.713,
+        "z": {
+          "endocrine": 0.723,
+          "antiHER2": 0.311,
+          "chemo": 0.01
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "LGK974",
+        "gap": 0.712,
+        "z": {
+          "endocrine": -0.083,
+          "antiHER2": -0.693,
+          "chemo": 0.019
+        },
+        "most_sensitive_axis": "antiHER2"
+      },
+      {
+        "drug": "SGC0946",
+        "gap": 0.704,
+        "z": {
+          "endocrine": 0.585,
+          "antiHER2": -0.119,
+          "chemo": -0.052
+        },
+        "most_sensitive_axis": "antiHER2"
+      },
+      {
+        "drug": "Fulvestrant",
+        "gap": 0.703,
+        "z": {
+          "endocrine": -0.558,
+          "antiHER2": -0.123,
+          "chemo": 0.145
+        },
+        "most_sensitive_axis": "endocrine"
+      },
+      {
+        "drug": "Serdemetan",
+        "gap": 0.701,
+        "z": {
+          "endocrine": 0.766,
+          "antiHER2": 0.065,
+          "chemo": 0.389
+        },
+        "most_sensitive_axis": "antiHER2"
+      },
+      {
+        "drug": "Bosutinib",
+        "gap": 0.698,
+        "z": {
+          "endocrine": 0.955,
+          "antiHER2": 0.431,
+          "chemo": 0.257
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "ML323",
+        "gap": 0.697,
+        "z": {
+          "endocrine": -0.282,
+          "antiHER2": -0.591,
+          "chemo": 0.106
+        },
+        "most_sensitive_axis": "antiHER2"
+      },
+      {
+        "drug": "BEN",
+        "gap": 0.692,
+        "z": {
+          "endocrine": 1.259,
+          "antiHER2": 0.775,
+          "chemo": 0.567
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Acetalax",
+        "gap": 0.692,
+        "z": {
+          "endocrine": -1.484,
+          "antiHER2": -1.549,
+          "chemo": -0.857
+        },
+        "most_sensitive_axis": "antiHER2"
+      },
+      {
+        "drug": "GSK2578215A",
+        "gap": 0.69,
+        "z": {
+          "endocrine": 0.769,
+          "antiHER2": 0.381,
+          "chemo": 0.079
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "UNC0379",
+        "gap": 0.689,
+        "z": {
+          "endocrine": 0.988,
+          "antiHER2": 0.571,
+          "chemo": 0.299
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "ZM447439",
+        "gap": 0.683,
+        "z": {
+          "endocrine": 0.876,
+          "antiHER2": 0.411,
+          "chemo": 0.193
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Entospletinib",
+        "gap": 0.681,
+        "z": {
+          "endocrine": 0.914,
+          "antiHER2": 0.773,
+          "chemo": 0.233
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Linsitinib",
+        "gap": 0.681,
+        "z": {
+          "endocrine": 0.988,
+          "antiHER2": 0.405,
+          "chemo": 0.307
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "SN-38",
+        "gap": 0.675,
+        "z": {
+          "endocrine": 0.804,
+          "antiHER2": 0.718,
+          "chemo": 0.129
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "630600",
+        "gap": 0.674,
+        "z": {
+          "endocrine": 0.657,
+          "antiHER2": -0.017,
+          "chemo": 0.101
+        },
+        "most_sensitive_axis": "antiHER2"
+      },
+      {
+        "drug": "BDOCA000347a",
+        "gap": 0.673,
+        "z": {
+          "endocrine": -0.067,
+          "antiHER2": -0.74,
+          "chemo": -0.095
+        },
+        "most_sensitive_axis": "antiHER2"
+      },
+      {
+        "drug": "GSK-LSD1",
+        "gap": 0.668,
+        "z": {
+          "endocrine": 0.58,
+          "antiHER2": -0.088,
+          "chemo": 0.251
+        },
+        "most_sensitive_axis": "antiHER2"
+      },
+      {
+        "drug": "SB216763",
+        "gap": 0.663,
+        "z": {
+          "endocrine": 1.157,
+          "antiHER2": 0.651,
+          "chemo": 0.494
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "MN-64",
+        "gap": 0.659,
+        "z": {
+          "endocrine": 0.179,
+          "antiHER2": -0.48,
+          "chemo": -0.078
+        },
+        "most_sensitive_axis": "antiHER2"
+      },
+      {
+        "drug": "PRT062607",
+        "gap": 0.658,
+        "z": {
+          "endocrine": 1.268,
+          "antiHER2": 0.9,
+          "chemo": 0.61
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "SCH772984",
+        "gap": 0.656,
+        "z": {
+          "endocrine": 1.028,
+          "antiHER2": 0.707,
+          "chemo": 0.372
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Docetaxel",
+        "gap": 0.65,
+        "z": {
+          "endocrine": 0.733,
+          "antiHER2": 0.477,
+          "chemo": 0.083
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Schweinfurthin A",
+        "gap": 0.647,
+        "z": {
+          "endocrine": 0.919,
+          "antiHER2": 0.272,
+          "chemo": 0.273
+        },
+        "most_sensitive_axis": "antiHER2"
+      },
+      {
+        "drug": "PFI-1",
+        "gap": 0.645,
+        "z": {
+          "endocrine": 0.763,
+          "antiHER2": 0.749,
+          "chemo": 0.118
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Talazoparib",
+        "gap": 0.633,
+        "z": {
+          "endocrine": 0.96,
+          "antiHER2": 0.773,
+          "chemo": 0.327
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Tanespimycin",
+        "gap": 0.63,
+        "z": {
+          "endocrine": 0.287,
+          "antiHER2": -0.343,
+          "chemo": -0.045
+        },
+        "most_sensitive_axis": "antiHER2"
+      },
+      {
+        "drug": "BDF00022089a",
+        "gap": 0.629,
+        "z": {
+          "endocrine": 0.447,
+          "antiHER2": -0.182,
+          "chemo": 0.153
+        },
+        "most_sensitive_axis": "antiHER2"
+      },
+      {
+        "drug": "GSK2606414",
+        "gap": 0.625,
+        "z": {
+          "endocrine": 0.529,
+          "antiHER2": -0.096,
+          "chemo": 0.503
+        },
+        "most_sensitive_axis": "antiHER2"
+      },
+      {
+        "drug": "JNK Inhibitor VIII",
+        "gap": 0.621,
+        "z": {
+          "endocrine": 0.68,
+          "antiHER2": 0.059,
+          "chemo": 0.109
+        },
+        "most_sensitive_axis": "antiHER2"
+      },
+      {
+        "drug": "PBD-288",
+        "gap": 0.62,
+        "z": {
+          "endocrine": 0.879,
+          "antiHER2": 0.645,
+          "chemo": 0.259
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Leflunomide",
+        "gap": 0.617,
+        "z": {
+          "endocrine": 0.628,
+          "antiHER2": 0.378,
+          "chemo": 0.011
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "PLX-4720",
+        "gap": 0.616,
+        "z": {
+          "endocrine": 0.798,
+          "antiHER2": 0.386,
+          "chemo": 0.182
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "PF-4708671",
+        "gap": 0.611,
+        "z": {
+          "endocrine": 0.576,
+          "antiHER2": -0.035,
+          "chemo": 0.52
+        },
+        "most_sensitive_axis": "antiHER2"
+      },
+      {
+        "drug": "KRAS (G12C) Inhibitor-12",
+        "gap": 0.605,
+        "z": {
+          "endocrine": 0.636,
+          "antiHER2": 0.242,
+          "chemo": 0.031
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Rucaparib",
+        "gap": 0.604,
+        "z": {
+          "endocrine": 0.67,
+          "antiHER2": 0.349,
+          "chemo": 0.066
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "GSK2830371A",
+        "gap": 0.603,
+        "z": {
+          "endocrine": 0.662,
+          "antiHER2": 0.442,
+          "chemo": 0.059
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "THR-102",
+        "gap": 0.601,
+        "z": {
+          "endocrine": 0.53,
+          "antiHER2": -0.071,
+          "chemo": 0.394
+        },
+        "most_sensitive_axis": "antiHER2"
+      },
+      {
+        "drug": "Oxaliplatin",
+        "gap": 0.6,
+        "z": {
+          "endocrine": 0.877,
+          "antiHER2": 0.686,
+          "chemo": 0.277
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Olaparib",
+        "gap": 0.596,
+        "z": {
+          "endocrine": 0.866,
+          "antiHER2": 0.451,
+          "chemo": 0.27
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Sinularin",
+        "gap": 0.594,
+        "z": {
+          "endocrine": -0.274,
+          "antiHER2": -0.6,
+          "chemo": -0.006
+        },
+        "most_sensitive_axis": "antiHER2"
+      },
+      {
+        "drug": "HKMTI-1-005",
+        "gap": 0.594,
+        "z": {
+          "endocrine": 0.745,
+          "antiHER2": 0.549,
+          "chemo": 0.151
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "743380",
+        "gap": 0.588,
+        "z": {
+          "endocrine": -0.435,
+          "antiHER2": -0.571,
+          "chemo": 0.017
+        },
+        "most_sensitive_axis": "antiHER2"
+      },
+      {
+        "drug": "5-Fluorouracil",
+        "gap": 0.583,
+        "z": {
+          "endocrine": 0.915,
+          "antiHER2": 0.657,
+          "chemo": 0.332
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "alpha-lipoic acid",
+        "gap": 0.575,
+        "z": {
+          "endocrine": 0.469,
+          "antiHER2": 0.296,
+          "chemo": -0.106
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "NVP-ADW742",
+        "gap": 0.575,
+        "z": {
+          "endocrine": 0.868,
+          "antiHER2": 0.782,
+          "chemo": 0.293
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Bleomycin",
+        "gap": 0.573,
+        "z": {
+          "endocrine": 0.881,
+          "antiHER2": 0.753,
+          "chemo": 0.308
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "AZD4547",
+        "gap": 0.57,
+        "z": {
+          "endocrine": 0.239,
+          "antiHER2": 0.149,
+          "chemo": -0.331
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "NU7441",
+        "gap": 0.563,
+        "z": {
+          "endocrine": 0.212,
+          "antiHER2": 0.234,
+          "chemo": -0.329
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Cyclophosphamide",
+        "gap": 0.561,
+        "z": {
+          "endocrine": 0.529,
+          "antiHER2": 0.097,
+          "chemo": -0.032
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "RO-3306",
+        "gap": 0.558,
+        "z": {
+          "endocrine": 0.298,
+          "antiHER2": 0.186,
+          "chemo": -0.26
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Sabutoclax",
+        "gap": 0.557,
+        "z": {
+          "endocrine": 0.431,
+          "antiHER2": 0.624,
+          "chemo": 0.067
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Ribociclib",
+        "gap": 0.555,
+        "z": {
+          "endocrine": 0.499,
+          "antiHER2": 0.225,
+          "chemo": 0.78
+        },
+        "most_sensitive_axis": "antiHER2"
+      },
+      {
+        "drug": "Vinorelbine",
+        "gap": 0.554,
+        "z": {
+          "endocrine": 0.786,
+          "antiHER2": 0.413,
+          "chemo": 0.232
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "741909",
+        "gap": 0.552,
+        "z": {
+          "endocrine": -0.535,
+          "antiHER2": -0.582,
+          "chemo": -0.03
+        },
+        "most_sensitive_axis": "antiHER2"
+      },
+      {
+        "drug": "Piperlongumine",
+        "gap": 0.547,
+        "z": {
+          "endocrine": -0.027,
+          "antiHER2": 0.52,
+          "chemo": 0.354
+        },
+        "most_sensitive_axis": "endocrine"
+      },
+      {
+        "drug": "Dabrafenib",
+        "gap": 0.547,
+        "z": {
+          "endocrine": 0.851,
+          "antiHER2": 0.647,
+          "chemo": 0.304
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "EPZ5676",
+        "gap": 0.545,
+        "z": {
+          "endocrine": 0.538,
+          "antiHER2": -0.007,
+          "chemo": 0.27
+        },
+        "most_sensitive_axis": "antiHER2"
+      },
+      {
+        "drug": "Vismodegib",
+        "gap": 0.539,
+        "z": {
+          "endocrine": 0.696,
+          "antiHER2": 0.163,
+          "chemo": 0.157
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "GSK3337463A",
+        "gap": 0.536,
+        "z": {
+          "endocrine": 0.512,
+          "antiHER2": 0.343,
+          "chemo": -0.024
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Dacarbazine",
+        "gap": 0.536,
+        "z": {
+          "endocrine": 0.297,
+          "antiHER2": 0.459,
+          "chemo": -0.077
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "AMG-319",
+        "gap": 0.534,
+        "z": {
+          "endocrine": 0.725,
+          "antiHER2": 0.6,
+          "chemo": 0.191
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "EPZ004777",
+        "gap": 0.533,
+        "z": {
+          "endocrine": 0.642,
+          "antiHER2": 0.196,
+          "chemo": 0.109
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "AZ6102",
+        "gap": 0.531,
+        "z": {
+          "endocrine": 0.538,
+          "antiHER2": 0.52,
+          "chemo": 0.007
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "WEHI-539",
+        "gap": 0.528,
+        "z": {
+          "endocrine": 0.194,
+          "antiHER2": 0.179,
+          "chemo": -0.334
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "GSK-LSD1-2HCl ",
+        "gap": 0.518,
+        "z": {
+          "endocrine": 0.578,
+          "antiHER2": 0.351,
+          "chemo": 0.06
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Motesanib",
+        "gap": 0.516,
+        "z": {
+          "endocrine": 0.676,
+          "antiHER2": 0.171,
+          "chemo": 0.16
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "CZC24832",
+        "gap": 0.515,
+        "z": {
+          "endocrine": 0.463,
+          "antiHER2": 0.239,
+          "chemo": -0.052
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Bromosporine",
+        "gap": 0.513,
+        "z": {
+          "endocrine": 0.628,
+          "antiHER2": 0.311,
+          "chemo": 0.115
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "XAV939",
+        "gap": 0.51,
+        "z": {
+          "endocrine": 0.61,
+          "antiHER2": 0.1,
+          "chemo": 0.12
+        },
+        "most_sensitive_axis": "antiHER2"
+      },
+      {
+        "drug": "N29087-69-1",
+        "gap": 0.509,
+        "z": {
+          "endocrine": 0.622,
+          "antiHER2": 0.411,
+          "chemo": 0.113
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Cytarabine",
+        "gap": 0.509,
+        "z": {
+          "endocrine": 0.967,
+          "antiHER2": 0.833,
+          "chemo": 0.458
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "123829",
+        "gap": 0.508,
+        "z": {
+          "endocrine": 0.258,
+          "antiHER2": 0.072,
+          "chemo": -0.25
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "Navitoclax",
+        "gap": 0.507,
+        "z": {
+          "endocrine": -0.003,
+          "antiHER2": 0.364,
+          "chemo": -0.143
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "EHT-1864",
+        "gap": 0.506,
+        "z": {
+          "endocrine": -0.033,
+          "antiHER2": -0.539,
+          "chemo": -0.063
+        },
+        "most_sensitive_axis": "antiHER2"
+      },
+      {
+        "drug": "glutathione",
+        "gap": 0.504,
+        "z": {
+          "endocrine": 0.452,
+          "antiHER2": 0.456,
+          "chemo": -0.048
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "OTX015",
+        "gap": 0.503,
+        "z": {
+          "endocrine": 0.693,
+          "antiHER2": 0.828,
+          "chemo": 0.325
+        },
+        "most_sensitive_axis": "chemo"
+      },
+      {
+        "drug": "THR-101",
+        "gap": 0.502,
+        "z": {
+          "endocrine": 0.52,
+          "antiHER2": 0.111,
+          "chemo": 0.018
+        },
+        "most_sensitive_axis": "chemo"
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "_doc": "Cross-cancer sealed-forward seals. Commits refer to the original repository biospin/BioProject02.",
+  "_rule": "A seal is sealed-forward if the prediction (preregistration) commit precedes the result (mil_cost_results.json) commit.",
+  "seals": [
+    {
+      "claim": "Lung held-out sealed-forward",
+      "prediction_commit": "77c063306209771a6655ec18667dc1e6091ad3e7",
+      "result_commit": "994b18734d89eb0ab867bd59ddd42c39c00d4bb2"
+    },
+    {
+      "claim": "Gastric held-out sealed-forward",
+      "prediction_commit": "b5b0088cd5257db75f384cd3f9e99b7fb7d3fcb6",
+      "result_commit": "2760fb8af9175dbba2d0ce04d8dd0ea041767558"
+    },
+    {
+      "claim": "Head and neck held-out sealed-forward",
+      "prediction_commit": "b5b0088cd5257db75f384cd3f9e99b7fb7d3fcb6",
+      "result_commit": "28eb0af3ba043308eb5b0f453eb56afea87f6b7f"
+    }
+  ]
+}

@@ -1,0 +1,254 @@
+{
+  "cohort": "HEADNECK_HNSC",
+  "endpoint": "hpv_pos",
+  "A_multislide_concordance": {
+    "n_multislide_patients": 17,
+    "n_pos": 1,
+    "n_neg": 16,
+    "median_score_sd": 0.0001,
+    "median_score_range": 0.0001,
+    "call_agree_rate@0.5": 0.9412,
+    "CONSTRAINT": "1 positive multi-slide patient: positive-class agreement cannot be measured. Agreement rates below are dominated by negatives (confident low scores), so whether HPV/MSI positive calls depend on slide sampling cannot be answered with this data.",
+    "per_patient": [
+      {
+        "case": "TCGA-QK-A6IF",
+        "label": 1,
+        "n_slides": 2,
+        "slide_scores": [
+          0.9226,
+          0.001
+        ],
+        "score_sd": 0.6517,
+        "score_range": 0.9216,
+        "calls_agree@0.5": false
+      },
+      {
+        "case": "TCGA-D6-6515",
+        "label": 0,
+        "n_slides": 2,
+        "slide_scores": [
+          0.0001,
+          0.0014
+        ],
+        "score_sd": 0.0009,
+        "score_range": 0.0013,
+        "calls_agree@0.5": true
+      },
+      {
+        "case": "TCGA-D6-6516",
+        "label": 0,
+        "n_slides": 2,
+        "slide_scores": [
+          0.0001,
+          0.0
+        ],
+        "score_sd": 0.0,
+        "score_range": 0.0,
+        "calls_agree@0.5": true
+      },
+      {
+        "case": "TCGA-D6-6517",
+        "label": 0,
+        "n_slides": 2,
+        "slide_scores": [
+          0.0,
+          0.0
+        ],
+        "score_sd": 0.0,
+        "score_range": 0.0,
+        "calls_agree@0.5": true
+      },
+      {
+        "case": "TCGA-D6-6823",
+        "label": 0,
+        "n_slides": 2,
+        "slide_scores": [
+          0.0,
+          0.0
+        ],
+        "score_sd": 0.0,
+        "score_range": 0.0,
+        "calls_agree@0.5": true
+      },
+      {
+        "case": "TCGA-D6-6824",
+        "label": 0,
+        "n_slides": 2,
+        "slide_scores": [
+          0.0,
+          0.0
+        ],
+        "score_sd": 0.0,
+        "score_range": 0.0,
+        "calls_agree@0.5": true
+      },
+      {
+        "case": "TCGA-D6-6825",
+        "label": 0,
+        "n_slides": 2,
+        "slide_scores": [
+          0.0001,
+          0.0
+        ],
+        "score_sd": 0.0001,
+        "score_range": 0.0001,
+        "calls_agree@0.5": true
+      },
+      {
+        "case": "TCGA-D6-6826",
+        "label": 0,
+        "n_slides": 2,
+        "slide_scores": [
+          0.0,
+          0.0
+        ],
+        "score_sd": 0.0,
+        "score_range": 0.0,
+        "calls_agree@0.5": true
+      },
+      {
+        "case": "TCGA-D6-6827",
+        "label": 0,
+        "n_slides": 2,
+        "slide_scores": [
+          0.0008,
+          0.0006
+        ],
+        "score_sd": 0.0001,
+        "score_range": 0.0001,
+        "calls_agree@0.5": true
+      },
+      {
+        "case": "TCGA-D6-8568",
+        "label": 0,
+        "n_slides": 2,
+        "slide_scores": [
+          0.0,
+          0.1914
+        ],
+        "score_sd": 0.1353,
+        "score_range": 0.1914,
+        "calls_agree@0.5": true
+      },
+      {
+        "case": "TCGA-D6-8569",
+        "label": 0,
+        "n_slides": 2,
+        "slide_scores": [
+          0.0001,
+          0.0
+        ],
+        "score_sd": 0.0,
+        "score_range": 0.0,
+        "calls_agree@0.5": true
+      },
+      {
+        "case": "TCGA-QK-A64Z",
+        "label": 0,
+        "n_slides": 4,
+        "slide_scores": [
+          0.0044,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "score_sd": 0.0022,
+        "score_range": 0.0044,
+        "calls_agree@0.5": true
+      },
+      {
+        "case": "TCGA-QK-A8Z8",
+        "label": 0,
+        "n_slides": 2,
+        "slide_scores": [
+          0.0001,
+          0.0035
+        ],
+        "score_sd": 0.0024,
+        "score_range": 0.0034,
+        "calls_agree@0.5": true
+      },
+      {
+        "case": "TCGA-T3-A92M",
+        "label": 0,
+        "n_slides": 3,
+        "slide_scores": [
+          0.0001,
+          0.0003,
+          0.0003
+        ],
+        "score_sd": 0.0001,
+        "score_range": 0.0002,
+        "calls_agree@0.5": true
+      },
+      {
+        "case": "TCGA-T3-A92N",
+        "label": 0,
+        "n_slides": 3,
+        "slide_scores": [
+          0.0033,
+          0.0004,
+          0.0013
+        ],
+        "score_sd": 0.0015,
+        "score_range": 0.0029,
+        "calls_agree@0.5": true
+      },
+      {
+        "case": "TCGA-WA-A7GZ",
+        "label": 0,
+        "n_slides": 2,
+        "slide_scores": [
+          0.0,
+          0.0011
+        ],
+        "score_sd": 0.0008,
+        "score_range": 0.0011,
+        "calls_agree@0.5": true
+      },
+      {
+        "case": "TCGA-WA-A7H4",
+        "label": 0,
+        "n_slides": 2,
+        "slide_scores": [
+          0.0,
+          0.0
+        ],
+        "score_sd": 0.0,
+        "score_range": 0.0,
+        "calls_agree@0.5": true
+      }
+    ]
+  },
+  "B_region_robustness": {
+    "endpoint": "hpv_pos",
+    "n": 412,
+    "n_pos": 42,
+    "oof_auroc_meanpool": 0.9022,
+    "B_subsamples": 50,
+    "fracs": [
+      0.5,
+      0.25
+    ],
+    "pos": {
+      "median_sd@0.5": 0.0035,
+      "median_flip@0.5": 0.0,
+      "median_sd@0.25": 0.0066,
+      "median_flip@0.25": 0.0,
+      "median_top5pct_tile_share": 0.1576
+    },
+    "neg": {
+      "median_sd@0.5": 0.0,
+      "median_flip@0.5": 0.0,
+      "median_sd@0.25": 0.0,
+      "median_flip@0.25": 0.0,
+      "median_top5pct_tile_share": -0.0683
+    }
+  },
+  "NOT_FEASIBLE": {
+    "tumor_only_vs_wsi": "No tumour-region annotation -> not measurable.",
+    "necrosis_stroma_exclusion": "No tissue-type annotation -> not measurable.",
+    "attention_FM_cross": "Cross-cancer embeddings exist only for uni_v1 -> cross-FM attention not possible.",
+    "attention_seed_cross": "No trained CLAM model saved -> cross-seed attention requires CLAM training (GPU)."
+  }
+}

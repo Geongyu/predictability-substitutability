@@ -1,0 +1,192 @@
+{
+  "cancer": "LUNG_NSCLC",
+  "leakage_guard": "cell-line-only",
+  "axes_n": {
+    "antiEGFR": 6,
+    "antiKRAS_G12C": 9,
+    "chemo": 67
+  },
+  "n_drugs": 286,
+  "n_discriminating": 133,
+  "axis_pair_distance": {
+    "antiEGFR__antiKRAS_G12C": {
+      "kendall_tau": 0.237,
+      "therapeutic_distance": 0.763
+    },
+    "antiEGFR__chemo": {
+      "kendall_tau": 0.333,
+      "therapeutic_distance": 0.667
+    },
+    "antiKRAS_G12C__chemo": {
+      "kendall_tau": 0.086,
+      "therapeutic_distance": 0.914
+    }
+  },
+  "positive_control": {
+    "Gefitinib": {
+      "most_sensitive": "antiEGFR",
+      "ok": true,
+      "z": {
+        "antiEGFR": -2.289,
+        "antiKRAS_G12C": 0.377,
+        "chemo": -0.188
+      }
+    },
+    "Afatinib": {
+      "most_sensitive": "antiEGFR",
+      "ok": true,
+      "z": {
+        "antiEGFR": -2.184,
+        "antiKRAS_G12C": 0.306,
+        "chemo": -0.105
+      }
+    },
+    "Osimertinib": {
+      "most_sensitive": "antiEGFR",
+      "ok": true,
+      "z": {
+        "antiEGFR": -2.859,
+        "antiKRAS_G12C": 0.49,
+        "chemo": -0.083
+      }
+    }
+  },
+  "top_discriminating": [
+    {
+      "drug": "Osimertinib",
+      "target": "EGFR",
+      "antiEGFR_z": -2.859,
+      "antiKRAS_G12C_z": 0.49,
+      "chemo_z": -0.083,
+      "gap": 3.349,
+      "most_sensitive": "antiEGFR"
+    },
+    {
+      "drug": "AZD3759",
+      "target": "EGFR",
+      "antiEGFR_z": -2.623,
+      "antiKRAS_G12C_z": 0.436,
+      "chemo_z": -0.024,
+      "gap": 3.058,
+      "most_sensitive": "antiEGFR"
+    },
+    {
+      "drug": "Gefitinib",
+      "target": "EGFR",
+      "antiEGFR_z": -2.289,
+      "antiKRAS_G12C_z": 0.377,
+      "chemo_z": -0.188,
+      "gap": 2.665,
+      "most_sensitive": "antiEGFR"
+    },
+    {
+      "drug": "Afatinib",
+      "target": "EGFR, ERBB2",
+      "antiEGFR_z": -2.184,
+      "antiKRAS_G12C_z": 0.306,
+      "chemo_z": -0.105,
+      "gap": 2.49,
+      "most_sensitive": "antiEGFR"
+    },
+    {
+      "drug": "Erlotinib",
+      "target": "EGFR",
+      "antiEGFR_z": -2.2,
+      "antiKRAS_G12C_z": 0.103,
+      "chemo_z": -0.033,
+      "gap": 2.303,
+      "most_sensitive": "antiEGFR"
+    },
+    {
+      "drug": "Sapitinib",
+      "target": "EGFR, ERBB2, ERBB3",
+      "antiEGFR_z": -2.114,
+      "antiKRAS_G12C_z": 0.183,
+      "chemo_z": -0.334,
+      "gap": 2.297,
+      "most_sensitive": "antiEGFR"
+    },
+    {
+      "drug": "Elesclomol",
+      "target": "HSP90",
+      "antiEGFR_z": 0.671,
+      "antiKRAS_G12C_z": 1.796,
+      "chemo_z": 0.054,
+      "gap": 1.742,
+      "most_sensitive": "chemo"
+    },
+    {
+      "drug": "IOX2",
+      "target": "EGLN1",
+      "antiEGFR_z": 1.89,
+      "antiKRAS_G12C_z": 0.972,
+      "chemo_z": 0.287,
+      "gap": 1.603,
+      "most_sensitive": "chemo"
+    },
+    {
+      "drug": "Bicalutamide",
+      "target": "AR",
+      "antiEGFR_z": 0.837,
+      "antiKRAS_G12C_z": -0.748,
+      "chemo_z": 0.18,
+      "gap": 1.586,
+      "most_sensitive": "antiKRAS_G12C"
+    },
+    {
+      "drug": "SL0101",
+      "target": "RSK, AURKB, PIM1, PIM3",
+      "antiEGFR_z": 1.769,
+      "antiKRAS_G12C_z": 0.863,
+      "chemo_z": 0.257,
+      "gap": 1.513,
+      "most_sensitive": "chemo"
+    },
+    {
+      "drug": "SB505124",
+      "target": "TGFBR1, ACVR1B, ACVR1C",
+      "antiEGFR_z": 0.667,
+      "antiKRAS_G12C_z": 1.659,
+      "chemo_z": 0.224,
+      "gap": 1.436,
+      "most_sensitive": "chemo"
+    },
+    {
+      "drug": "RVX-208",
+      "target": "BRD4",
+      "antiEGFR_z": 1.494,
+      "antiKRAS_G12C_z": 0.113,
+      "chemo_z": 0.25,
+      "gap": 1.381,
+      "most_sensitive": "antiKRAS_G12C"
+    },
+    {
+      "drug": "Ibrutinib",
+      "target": "BTK",
+      "antiEGFR_z": -1.058,
+      "antiKRAS_G12C_z": 0.27,
+      "chemo_z": -0.093,
+      "gap": 1.328,
+      "most_sensitive": "antiEGFR"
+    },
+    {
+      "drug": "N27922-53-1",
+      "target": "nan",
+      "antiEGFR_z": 1.393,
+      "antiKRAS_G12C_z": 0.153,
+      "chemo_z": 0.409,
+      "gap": 1.24,
+      "most_sensitive": "antiKRAS_G12C"
+    },
+    {
+      "drug": "Cediranib",
+      "target": "VEGFR, FLT1, FLT2, FLT3, FLT4,",
+      "antiEGFR_z": -0.904,
+      "antiKRAS_G12C_z": 0.216,
+      "chemo_z": 0.325,
+      "gap": 1.229,
+      "most_sensitive": "antiEGFR"
+    }
+  ],
+  "note": "Cell-line-only frozen map. cost = misrouting frequency (WSI MIL prediction) x therapeutic distance (below). MSI (ICI) and KRAS (antibody) axes excluded."
+}

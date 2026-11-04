@@ -1,0 +1,49 @@
+{
+  "purpose": "Clinical decision distances frozen before computing cost (same approach as frozen_map). Fixes per-direction distances for the misclassification pairs of the MSI-H and anti-EGFR axes (mean_cost=null in routing_cost.json) before the misroute direction distribution is seen.",
+  "cancer": "COLORECTAL",
+  "claim_level": "hypothesis_only",
+  "critic_status": "pending",
+  "repo_commit_hash": "d3a614f88855eafd50bf764aaf1ec07e543c33b6",
+  "frozen_before_running": "before recomputing the real MIL misclassification direction distribution (FN/FP)",
+  "not_drp": "These distances are treatment-routing substitution costs based on clinical outcomes (PFS/OS/toxicity), not drug-structure inputs. Not drug response prediction. hypothesis_only.",
+  "distance_scale": "0 (substitution harmless) to 1 (maximum substitution harm). Per direction (FN = marker-positive called negative, FP = marker-negative called positive).",
+  "mean_cost_formula": "mean_cost = (n_FN * d_FN + n_FP * d_FP) / n_holdout. If d_FN=d_FP=D this reduces to misroute_rate*D (same as the braf formula).",
+  "axes": {
+    "msi_high": {
+      "route_to": "anti-PD-1 (pembrolizumab)",
+      "positive_class": "MSI-H (marker=1)",
+      "d_FN": {
+        "value": 0.90,
+        "event": "MSI-H called MSS -> first-line pembrolizumab not given (undertreatment)",
+        "anchor": "KEYNOTE-177 (André NEJM 2020): dMMR/MSI-H mCRC first-line pembrolizumab vs chemotherapy, median PFS 16.5 vs 8.2 mo (HR 0.60), durable responses. Missing it loses a 2x PFS benefit and durable response -> large decision distance."
+      },
+      "d_FP": {
+        "value": 0.45,
+        "event": "MSS called MSI-H -> ineligible patient flagged for ICI (overtreatment)",
+        "anchor": "Single-agent ICI ORR ~0% in MSS mCRC (KEYNOTE-177 was dMMR only, MSS excluded). H&E routing triggers confirmatory MSI/MMR testing rather than final Rx -> harm is mostly delayed effective chemotherapy plus unnecessary testing (reversible) -> intermediate decision distance."
+      }
+    },
+    "anti_egfr_eligible": {
+      "route_to": "anti-EGFR (cetuximab / panitumumab)",
+      "positive_class": "eligible = all-RAS/BRAF-WT (marker=1)",
+      "d_FN": {
+        "value": 0.80,
+        "event": "Eligible (WT) called ineligible -> anti-EGFR not given to an eligible patient (undertreatment)",
+        "anchor": "FIRE-3 (Heinemann Lancet Oncol 2014): in RAS-WT, FOLFIRI+cetuximab vs +bevacizumab, OS 33.1 vs 25.0 mo. Loss of OS benefit, especially in left-sided tumours -> large decision distance."
+      },
+      "d_FP": {
+        "value": 0.90,
+        "event": "Ineligible (RAS/BRAF-mut) called eligible -> anti-EGFR given to an ineligible patient (active harm)",
+        "anchor": "PRIME (Douillard NEJM 2013): adding panitumumab in RAS-mut is detrimental to PFS/OS. No efficacy + grade 3 skin toxicity + cost -> the most harmful direction (active harm exceeds missed benefit)."
+      }
+    }
+  },
+  "braf_v600_note": {
+    "primary_mean_cost_source": "frozen_map antiBRAF__baseline=0.868 (cell-line therapeutic distance); mean_cost=0.086 from routing_cost.json v1 unchanged.",
+    "scale_caveat": "braf mean_cost is on the cell-line frozen_map scale; MSI/anti-EGFR mean_cost is on the clinical-decision scale. The three mean_cost values are not directly comparable or rankable.",
+    "parallel_clinical_distance_optional": {
+      "d_FN": {"value": 0.70, "event": "BRAF-V600E called WT -> encorafenib+cetuximab not given", "anchor": "BEACON (Kopetz NEJM 2019): BRAF-V600E mCRC enco+cetux vs chemotherapy, OS 8.4 vs 5.4 mo, ORR 20% vs 2%."},
+      "d_FP": {"value": 0.55, "event": "WT called BRAF-V600E -> inappropriate BRAF-targeted therapy", "anchor": "BRAF doublet is ineffective without V600E; adds toxicity and cost, but confirmatory BRAF testing is standard -> intermediate."}
+    }
+  }
+}

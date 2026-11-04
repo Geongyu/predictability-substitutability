@@ -1,0 +1,56 @@
+<svg style="font-family:Helvetica,Arial,sans-serif;background:#fff" viewBox="0 0 272 148" width="100%" xmlns="http://www.w3.org/2000/svg">
+<defs><pattern id="hatch" width="2.4" height="2.4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="2.4" height="2.4" fill="#fff"/><rect width="1.3" height="2.4" fill="#5B7DB1"/></pattern></defs>
+<line x1="82.0" y1="11" x2="82.0" y2="126.0" stroke="#D9DEE5" stroke-width="0.3"/>
+<text x="82.0" y="133.0" font-size="7.94" text-anchor="middle" font-weight="400" fill="#55606E" >0</text>
+<line x1="104.8" y1="11" x2="104.8" y2="126.0" stroke="#D9DEE5" stroke-width="0.3"/>
+<text x="104.8" y="133.0" font-size="7.94" text-anchor="middle" font-weight="400" fill="#55606E" >20</text>
+<line x1="127.5" y1="11" x2="127.5" y2="126.0" stroke="#D9DEE5" stroke-width="0.3"/>
+<text x="127.5" y="133.0" font-size="7.94" text-anchor="middle" font-weight="400" fill="#55606E" >40</text>
+<line x1="150.2" y1="11" x2="150.2" y2="126.0" stroke="#D9DEE5" stroke-width="0.3"/>
+<text x="150.2" y="133.0" font-size="7.94" text-anchor="middle" font-weight="400" fill="#55606E" >60</text>
+<line x1="173.0" y1="11" x2="173.0" y2="126.0" stroke="#D9DEE5" stroke-width="0.3"/>
+<text x="173.0" y="133.0" font-size="7.94" text-anchor="middle" font-weight="400" fill="#55606E" >80</text>
+<line x1="195.8" y1="11" x2="195.8" y2="126.0" stroke="#D9DEE5" stroke-width="0.3"/>
+<text x="195.8" y="133.0" font-size="7.94" text-anchor="middle" font-weight="400" fill="#55606E" >100</text>
+<line x1="218.5" y1="11" x2="218.5" y2="126.0" stroke="#D9DEE5" stroke-width="0.3"/>
+<text x="218.5" y="133.0" font-size="7.94" text-anchor="middle" font-weight="400" fill="#55606E" >120</text>
+<line x1="241.2" y1="11" x2="241.2" y2="126.0" stroke="#D9DEE5" stroke-width="0.3"/>
+<text x="241.2" y="133.0" font-size="7.94" text-anchor="middle" font-weight="400" fill="#55606E" >140</text>
+<line x1="264.0" y1="11" x2="264.0" y2="126.0" stroke="#D9DEE5" stroke-width="0.3"/>
+<text x="264.0" y="133.0" font-size="7.94" text-anchor="middle" font-weight="400" fill="#55606E" >160</text>
+<rect x="82" y="14.0" width="174.0" height="7.6" fill="#D55E00" stroke="#D55E00" stroke-width="0.4"/>
+<text x="79.5" y="19.5" font-size="8.38" text-anchor="end" font-weight="400" fill="#1B2333" >Lung LUSC histology</text>
+<text x="257.8" y="19.5" font-size="7.94" text-anchor="start" font-weight="700" fill="#1B2333" >153</text>
+<rect x="82" y="24.8" width="46.6" height="7.6" fill="url(#hatch)" stroke="#5B7DB1" stroke-width="0.4"/>
+<text x="79.5" y="30.3" font-size="8.38" text-anchor="end" font-weight="400" fill="#1B2333" >H&amp;N grade</text>
+<text x="130.4" y="30.3" font-size="7.94" text-anchor="start" font-weight="700" fill="#1B2333" >41</text>
+<rect x="82" y="35.6" width="35.3" height="7.6" fill="url(#hatch)" stroke="#5B7DB1" stroke-width="0.4"/>
+<text x="79.5" y="41.1" font-size="8.38" text-anchor="end" font-weight="400" fill="#1B2333" >Gastric Lauren</text>
+<text x="119.1" y="41.1" font-size="7.94" text-anchor="start" font-weight="700" fill="#1B2333" >31</text>
+<rect x="82" y="46.4" width="29.6" height="7.6" fill="#1B9E77" stroke="#1B9E77" stroke-width="0.4"/>
+<text x="79.5" y="51.9" font-size="8.38" text-anchor="end" font-weight="700" fill="#1B2333" >H&amp;N HPV</text>
+<text x="113.4" y="51.9" font-size="7.94" text-anchor="start" font-weight="700" fill="#1B2333" >26</text>
+<rect x="82" y="57.2" width="27.3" height="7.6" fill="#E6A817" stroke="#E6A817" stroke-width="0.4"/>
+<text x="79.5" y="62.7" font-size="8.38" text-anchor="end" font-weight="400" fill="#1B2333" >Gastric MSI-H</text>
+<text x="111.1" y="62.7" font-size="7.94" text-anchor="start" font-weight="700" fill="#1B2333" >24</text>
+<rect x="82" y="68.0" width="19.3" height="7.6" fill="#E6A817" stroke="#E6A817" stroke-width="0.4"/>
+<text x="79.5" y="73.5" font-size="8.38" text-anchor="end" font-weight="400" fill="#1B2333" >H&amp;N EGFR amp</text>
+<text x="103.1" y="73.5" font-size="7.94" text-anchor="start" font-weight="700" fill="#1B2333" >17</text>
+<rect x="82" y="78.8" width="17.1" height="7.6" fill="#E6A817" stroke="#E6A817" stroke-width="0.4"/>
+<text x="79.5" y="84.3" font-size="8.38" text-anchor="end" font-weight="400" fill="#1B2333" >Lung EGFR</text>
+<text x="100.9" y="84.3" font-size="7.94" text-anchor="start" font-weight="700" fill="#1B2333" >15</text>
+<rect x="82" y="89.6" width="15.9" height="7.6" fill="#E6A817" stroke="#E6A817" stroke-width="0.4"/>
+<text x="79.5" y="95.1" font-size="8.38" text-anchor="end" font-weight="400" fill="#1B2333" >Gastric ERBB2 amp</text>
+<text x="99.7" y="95.1" font-size="7.94" text-anchor="start" font-weight="700" fill="#1B2333" >14</text>
+<rect x="82" y="100.4" width="15.9" height="7.6" fill="#E6A817" stroke="#E6A817" stroke-width="0.4"/>
+<text x="79.5" y="105.9" font-size="8.38" text-anchor="end" font-weight="400" fill="#1B2333" >Lung KRAS-G12C</text>
+<text x="99.7" y="105.9" font-size="7.94" text-anchor="start" font-weight="700" fill="#1B2333" >14</text>
+<rect x="82" y="111.2" width="8.0" height="7.6" fill="#E6A817" stroke="#E6A817" stroke-width="0.4"/>
+<text x="79.5" y="116.7" font-size="8.38" text-anchor="end" font-weight="400" fill="#1B2333" >Gastric EBV</text>
+<text x="91.8" y="116.7" font-size="7.94" text-anchor="start" font-weight="700" fill="#1B2333" >7</text>
+<line x1="110.4" y1="8" x2="110.4" y2="126.0" stroke="#1B2333" stroke-width="0.7" stroke-dasharray="2 1.5"/>
+<text x="112.4" y="7.0" font-size="7.94" text-anchor="start" font-weight="700" fill="#1B2333" >eligibility threshold = 25</text>
+<text x="121.3" y="62.7" font-size="7.50" text-anchor="start" font-weight="600" fill="#D55E00" >← 1 short; threshold not adjusted</text>
+<line x1="82" y1="126.0" x2="264" y2="126.0" stroke="#1B2333" stroke-width="0.5"/>
+<text x="173.0" y="144.0" font-size="8.82" text-anchor="middle" font-weight="600" fill="#1B2333" >Hold-out positive patients</text>
+</svg>

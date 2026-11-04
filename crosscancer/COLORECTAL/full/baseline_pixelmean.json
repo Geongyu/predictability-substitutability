@@ -1,0 +1,17 @@
+{
+ "track": "COLORECTAL",
+ "purpose": "pixel-mean baseline",
+ "claim_level": "hypothesis_only",
+ "critic_status": "pending",
+ "endpoints": {
+  "msi_high": {
+   "status": "skip(insufficient)"
+  },
+  "anti_egfr_eligible": {
+   "status": "skip(insufficient)"
+  },
+  "braf_v600": {
+   "status": "skip(insufficient)"
+  }
+ }
+}

@@ -1,0 +1,66 @@
+{
+ "track": "LUNG_NSCLC",
+ "purpose": "5-seed shuffle-null robustness",
+ "fm": "uni2h",
+ "feature_dim": 1536,
+ "claim_level": "hypothesis_only",
+ "critic_status": "pending",
+ "criterion": "real_auroc > null_mean + 2*null_sd (5 seed, ddof=1)",
+ "shuffle_seeds": [
+  42,
+  1,
+  2,
+  3,
+  4
+ ],
+ "endpoints": {
+  "histology_lusc": {
+   "real_auroc": 0.9607,
+   "n_pos": 153,
+   "n_hold": 271,
+   "null_mean": 0.5492,
+   "null_sd": 0.1557,
+   "threshold": 0.8606,
+   "pass": true,
+   "null_seeds": [
+    0.5342,
+    0.4299,
+    0.7072,
+    0.3683,
+    0.7066
+   ]
+  },
+  "egfr_activating": {
+   "real_auroc": 0.8818,
+   "n_pos": 15,
+   "n_hold": 271,
+   "null_mean": 0.544,
+   "null_sd": 0.1175,
+   "threshold": 0.779,
+   "pass": true,
+   "null_seeds": [
+    0.6094,
+    0.5792,
+    0.5339,
+    0.3478,
+    0.6495
+   ]
+  },
+  "kras_g12c": {
+   "real_auroc": 0.7607,
+   "n_pos": 14,
+   "n_hold": 271,
+   "null_mean": 0.4745,
+   "null_sd": 0.0684,
+   "threshold": 0.6113,
+   "pass": true,
+   "null_seeds": [
+    0.5531,
+    0.4099,
+    0.4002,
+    0.5272,
+    0.4822
+   ]
+  }
+ }
+}

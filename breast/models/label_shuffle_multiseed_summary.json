@@ -1,0 +1,131 @@
+{
+  "n_seeds": 5,
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "method": "Train labels permuted and model retrained for each of 5 seeds; evaluated on real val/external labels. Real AUC outside the null (shuffle) distribution indicates signal.",
+  "ER": {
+    "internal": {
+      "real_auc": 0.9013,
+      "null_mean": 0.5197,
+      "null_min": 0.4249,
+      "null_max": 0.6303,
+      "null_values": [
+        0.4249,
+        0.5168,
+        0.6303,
+        0.5767,
+        0.4496
+      ],
+      "real_above_null": true
+    },
+    "external": {
+      "real_auc": 0.894,
+      "null_mean": 0.5211,
+      "null_min": 0.3904,
+      "null_max": 0.6802,
+      "null_values": [
+        0.3904,
+        0.573,
+        0.534,
+        0.6802,
+        0.4277
+      ],
+      "real_above_null": true
+    }
+  },
+  "PR": {
+    "internal": {
+      "real_auc": 0.7765,
+      "null_mean": 0.4689,
+      "null_min": 0.3037,
+      "null_max": 0.6424,
+      "null_values": [
+        0.4647,
+        0.3037,
+        0.509,
+        0.6424,
+        0.4245
+      ],
+      "real_above_null": true
+    },
+    "external": {
+      "real_auc": 0.7776,
+      "null_mean": 0.4809,
+      "null_min": 0.3911,
+      "null_max": 0.5568,
+      "null_values": [
+        0.4523,
+        0.3911,
+        0.4907,
+        0.5134,
+        0.5568
+      ],
+      "real_above_null": true
+    }
+  },
+  "HER2": {
+    "internal": {
+      "real_auc": 0.5992,
+      "null_mean": 0.5501,
+      "null_min": 0.5043,
+      "null_max": 0.6063,
+      "null_values": [
+        0.5043,
+        0.5605,
+        0.564,
+        0.6063,
+        0.5156
+      ],
+      "real_above_null": false
+    },
+    "external": {
+      "real_auc": 0.5297,
+      "null_mean": 0.4699,
+      "null_min": 0.3391,
+      "null_max": 0.5804,
+      "null_values": [
+        0.3391,
+        0.4768,
+        0.5804,
+        0.4393,
+        0.5138
+      ],
+      "real_above_null": false
+    }
+  },
+  "PAM50": {
+    "internal": {
+      "real_auc": 0.7589,
+      "null_mean": 0.4684,
+      "null_min": 0.4388,
+      "null_max": 0.5074,
+      "null_values": [
+        0.4674,
+        0.4432,
+        0.4388,
+        0.5074,
+        0.4853
+      ],
+      "real_above_null": true
+    },
+    "external": {
+      "real_auc": 0.7216,
+      "null_mean": 0.5297,
+      "null_min": 0.4996,
+      "null_max": 0.5606,
+      "null_values": [
+        0.4996,
+        0.5491,
+        0.539,
+        0.5606,
+        0.5001
+      ],
+      "real_above_null": true
+    }
+  }
+}

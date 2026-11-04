@@ -1,0 +1,14 @@
+numpy
+scipy
+pandas
+scikit-learn
+torch
+torchvision
+timm
+huggingface_hub
+openslide-python
+Pillow
+PyYAML
+tqdm
+matplotlib
+requests
